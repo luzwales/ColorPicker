@@ -136,8 +136,8 @@ public partial class ColorItem : UserControl
 		int index = GetIndex();
 		Global.Bookmarks.ColorBookmarks.RemoveAt(index);
 		Global.Bookmarks.ColorBookmarksNotes.RemoveAt(index);
+		Global.BookmarksPage.OnColorDeleted(this); // 局部移除 + 同步缓存，避免全量重建卡顿
 		Global.BookmarksPage.ColorsBookmarks.Items.Remove(this);
-		Global.BookmarksPage.ColorsBtn_Click(sender, e);
 		Global.SelectorPage.LoadDetails();
 		Global.ConverterPage.LoadDetails();
 	}

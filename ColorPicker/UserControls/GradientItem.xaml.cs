@@ -78,9 +78,9 @@ public partial class GradientItem : UserControl
 	private void DeleteBtn_Click(object sender, RoutedEventArgs e)
 	{
 		Global.Bookmarks.GradientBookmarks.Remove(Gradient);
+		Global.BookmarksPage.OnGradientDeleted(this); // 局部移除 + 同步缓存，避免全量重建卡顿
 		Global.BookmarksPage.GradientsBookmarks.Items.Remove(this);
 		Global.GradientPage.LoadGradientUI();
-		Global.BookmarksPage.GradientsBtn_Click(sender, e);
 	}
 
 	public static event EventHandler<PageEventArgs> GoClick;

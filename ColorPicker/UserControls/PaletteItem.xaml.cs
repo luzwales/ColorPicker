@@ -156,9 +156,9 @@ public partial class PaletteItem : UserControl
 	private void DeleteBtn_Click(object sender, RoutedEventArgs e)
 	{
 		Global.Bookmarks.PaletteBookmarks.Remove(HexColor);
+		Global.BookmarksPage.OnPaletteDeleted(this); // 局部移除 + 同步缓存，避免全量重建卡顿
 		Global.BookmarksPage.PalettesBookmarks.Items.Remove(this);
 		Global.PalettePage.InitPaletteUI();
-		Global.BookmarksPage.PaletteBtn_Click(sender, e);
 	}
 
 	public static event EventHandler<PageEventArgs> GoClick;

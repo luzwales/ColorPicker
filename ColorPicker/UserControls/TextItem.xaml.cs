@@ -62,9 +62,9 @@ public partial class TextItem : UserControl
 	private void DeleteBtn_Click(object sender, RoutedEventArgs e)
 	{
 		Global.Bookmarks.TextBookmarks.Remove(BookmarkText);
+		Global.BookmarksPage.OnTextDeleted(this); // 局部移除 + 同步缓存，避免全量重建卡顿
 		Global.BookmarksPage.TextBookmarks.Items.Remove(this);
 		Global.TextPage.InitUI();
-		Global.BookmarksPage.TextBtn_Click(sender, e);
 	}
 
 	public static event EventHandler<PageEventArgs> GoClick;

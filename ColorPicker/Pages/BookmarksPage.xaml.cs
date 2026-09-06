@@ -322,6 +322,38 @@ public partial class BookmarksPage : Page
 		Placeholder.Visibility = ActiveEmpty() ? Visibility.Visible : Visibility.Collapsed;
 	}
 
+	// ===== 删除单张书签的"局部更新"入口 =====
+	// 只移除该卡片并同步缓存签名，绝不触发全量重建（否则删一张会把剩余几百张全部重建而卡顿）
+	internal void OnColorDeleted(ColorItem item)
+	{
+		_colorCache?.Remove(item);
+		_colorSig = MakeSig(Global.Bookmarks.ColorBookmarks);
+		_colorReady = true;
+		RefreshPlaceholder();
+	}
+
+	internal void OnPaletteDeleted(PaletteItem item)
+	{
+		_paletteCache?.Remove(item);
+		_paletteSig = MakeSig(Global.Bookmarks.PaletteBookmarks);
+		_paletteReady = true;
+		RefreshPlaceholder();
+	}
+
+	internal void OnGradientDeleted(GradientItem item)
+	{
+		_gradientCache?.Remove(item);
+		_gradientSig = MakeSig(Global.Bookmarks.GradientBookmarks);
+		RefreshPlaceholder();
+	}
+
+	internal void OnTextDeleted(TextItem item)
+	{
+		_textCache?.Remove(item);
+		_textSig = MakeSig(Global.Bookmarks.TextBookmarks);
+		RefreshPlaceholder();
+	}
+
 	internal void ColorsBtn_Click(object sender, RoutedEventArgs e)
 	{
 		UnCheckAllButtons();
