@@ -6,14 +6,14 @@
     xmlns:lang="clr-namespace:ColorPicker.Properties"
     xmlns:local="clr-namespace:ColorPicker.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Height="110"
-    MinWidth="170"
+    Height="96"
+    MinWidth="150"
     HorizontalContentAlignment="Stretch"
     FontFamily="../Fonts/#Hauora"
     Foreground="{DynamicResource Foreground1}"
     mc:Ignorable="d">
     <Border
-        Margin="10"
+        Margin="8"
         Background="{DynamicResource CardBackground}"
         CornerRadius="10"
         HorizontalAlignment="Stretch">
@@ -35,9 +35,9 @@
 
             <Border
                 x:Name="ColorBorder"
-                Width="60"
-                Height="60"
-                Margin="10"
+                Width="42"
+                Height="42"
+                Margin="8"
                 VerticalAlignment="Center"
                 d:Background="#ff0000"
                 CornerRadius="50"
@@ -56,30 +56,34 @@
             <StackPanel
                 Grid.Column="1"
                 Grid.ColumnSpan="1"
-                Margin="5"
+                Margin="4 0 2 0"
                 VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
                         FontWeight="ExtraBold"
+                        FontSize="12"
                         Foreground="{DynamicResource DarkGray}"
                         Text="{x:Static lang:Resources.RGB}" />
                     <TextBlock
                         x:Name="RgbTxt"
-                        Margin="10 0 0 0"
-                        MaxWidth="150"
+                        Margin="5 0 0 0"
+                        MaxWidth="80"
+                        FontSize="12"
                         FontWeight="ExtraBold"
                         Text="{x:Static lang:Resources.HEX}"
                         TextTrimming="CharacterEllipsis" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
+                        FontSize="12"
                         FontWeight="ExtraBold"
                         Foreground="{DynamicResource DarkGray}"
                         Text="{x:Static lang:Resources.HEX}" />
                     <TextBlock
                         x:Name="HEXTxt"
-                        Margin="10 0 0 0"
-                        MaxWidth="150"
+                        Margin="5 0 0 0"
+                        MaxWidth="80"
+                        FontSize="12"
                         FontWeight="ExtraBold"
                         Text="{x:Static lang:Resources.HEX}"
                         TextTrimming="CharacterEllipsis" />
@@ -89,10 +93,11 @@
             <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Top">
                 <TextBlock
                     x:Name="NoteIcon"
-                    Margin="0 6 5 0"
-                    Padding="5"
+                    Margin="0 5 3 0"
+                    Padding="3"
                     VerticalAlignment="Top"
                     FontFamily="..\Fonts\#FluentSystemIcons-Regular"
+                    FontSize="12"
                     MouseLeftButtonUp="NoteIcon_MouseLeftButtonUp"
                     Text="&#xF56C;">
                     <TextBlock.ToolTip>
@@ -105,13 +110,14 @@
                 <Button
                     x:Name="DeleteBtn"
                     Grid.Column="3"
-                    Margin="0 5 5 0"
-                    Padding="5"
+                    Margin="0 4 3 0"
+                    Padding="3"
                     VerticalAlignment="Top"
                     Background="{DynamicResource Background3}"
                     Click="DeleteBtn_Click"
                     Content="&#xF34D;"
                     FontFamily="..\Fonts\#FluentSystemIcons-Regular"
+                    FontSize="12"
                     Foreground="{DynamicResource Foreground1}"
                     Style="{DynamicResource DefaultButton}">
                     <Button.ToolTip>
@@ -124,13 +130,14 @@
                 <Button
                     x:Name="MoreBtn"
                     Grid.Column="3"
-                    Margin="0 5 5 0"
-                    Padding="5"
+                    Margin="0 4 3 0"
+                    Padding="3"
                     VerticalAlignment="Top"
                     Background="{DynamicResource Background3}"
                     Click="MoreBtn_Click"
                     Content="&#xFC2E;"
                     FontFamily="..\Fonts\#FluentSystemIcons-Regular"
+                    FontSize="12"
                     Foreground="{DynamicResource Foreground1}"
                     Style="{DynamicResource DefaultButton}">
                     <Button.ToolTip>

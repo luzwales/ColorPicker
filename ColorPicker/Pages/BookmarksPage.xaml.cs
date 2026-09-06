@@ -543,9 +543,11 @@ public partial class BookmarksPage : Page
         double width = HistoryGrid.ActualWidth - 20;
         if (width <= 0) return;
 
-        // 颜色卡片：最多 5 列；当单块可分配宽度 < 300px 时立即减少列数（对小屏收缩响应更快）
-        int colorCols = 5;
-        while (colorCols > 1 && width / colorCols < 300)
+        // 颜色卡片：最多 7 列；每格可分配宽度 < 200px 时立即减少列数。
+        // （卡片内部元素已压缩：色圆 42、图标按钮缩小，故可容纳更窄的格子，
+        //   大屏下每张卡片宽度约比原来减少 2/5）
+        int colorCols = 7;
+        while (colorCols > 1 && width / colorCols < 200)
         {
             colorCols--;
         }
