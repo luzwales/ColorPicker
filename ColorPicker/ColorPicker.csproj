@@ -12,7 +12,7 @@
 	<AssemblyName>ColorPickerMax</AssemblyName>
 	<Description>Maximize your creativity.</Description>
 	<RepositoryUrl>https://github.com/Leo-Corporation/ColorPicker</RepositoryUrl>
-	<Version>6.9.1.2602</Version>
+	<Version>1.0.1</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageIcon>logo.png</PackageIcon>
 	<ApplicationIcon>CPM.ico</ApplicationIcon>

@@ -139,7 +139,7 @@ public static class Global
 	}
 	public static string LastVersionLink => "https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/ColorPicker/5.0/Version.txt";
 
-	public static string Version => "6.9.1.2602";
+	public static string Version => "1.0.1";
 
 	public static string HiSentence
 	{
