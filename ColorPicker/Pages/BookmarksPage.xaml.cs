@@ -570,11 +570,8 @@ public partial class BookmarksPage : Page
         }
         WideGridColumns = wideCols;
 
+        // 文本书签仍保持居中、最多 4 列；渐变书签已改用 GridColumns 与颜色书签一致（填满整行），不再设固定宽度
         double blockWidth = Math.Min(width, wideCols * 300);
-        if (GradientsBookmarks != null && Math.Abs(GradientsBookmarks.Width - blockWidth) > 1)
-        {
-            GradientsBookmarks.Width = blockWidth;
-        }
         if (TextBookmarks != null && Math.Abs(TextBookmarks.Width - blockWidth) > 1)
         {
             TextBookmarks.Width = blockWidth;
