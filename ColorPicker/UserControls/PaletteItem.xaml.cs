@@ -28,6 +28,7 @@ using ColorPicker.Windows;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
@@ -70,9 +71,15 @@ public partial class PaletteItem : UserControl
 
 
 		RGB[][] palettes = [Global.GetShades(ColorInfo.HSL), Global.GetBrightness(ColorInfo.HSL), Global.GetHues(ColorInfo.HSL)];
+		UniformGrid[] panels = [ShadesPanel, BrightnessPanel, HuePanel];
 		for (int k = 0; k < palettes.Length; k++)
 		{
 			var shades = palettes[k];
+			if (shades.Length == 0) continue;
+
+			// 单行弹性铺满：色块高度 70，宽度按列均分整行（从根上避免换行挤压）
+			panels[k].Columns = shades.Length;
+
 			for (int i = 0; i < shades.Length; i++)
 			{
 				CornerRadius radius = i == 0 ? new(10, 0, 0, 10) : new(0);
@@ -81,8 +88,9 @@ public partial class PaletteItem : UserControl
 				Border border = new()
 				{
 					Cursor = Cursors.Hand,
-					Height = 50,
-					Width = 50,
+					Height = 70,
+					HorizontalAlignment = HorizontalAlignment.Stretch,
+					VerticalAlignment = VerticalAlignment.Stretch,
 					CornerRadius = radius,
 					Background = new SolidColorBrush { Color = Color.FromRgb(shades[i].R, shades[i].G, shades[i].B) },
 					Effect = new DropShadowEffect()
@@ -148,7 +156,7 @@ public partial class PaletteItem : UserControl
 	private void DeleteBtn_Click(object sender, RoutedEventArgs e)
 	{
 		Global.Bookmarks.PaletteBookmarks.Remove(HexColor);
-		Global.BookmarksPage.PalettesBookmarks.Children.Remove(this);
+		Global.BookmarksPage.PalettesBookmarks.Items.Remove(this);
 		Global.PalettePage.InitPaletteUI();
 		Global.BookmarksPage.PaletteBtn_Click(sender, e);
 	}

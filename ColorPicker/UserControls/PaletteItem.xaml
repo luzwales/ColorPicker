@@ -68,11 +68,13 @@
                         FontWeight="ExtraBold"
                         Text="{x:Static lang:Resources.Shades}" />
                 </StackPanel>
-                <WrapPanel
+                <UniformGrid
                     x:Name="ShadesPanel"
                     Grid.Row="1"
-                    HorizontalAlignment="Center"
-                    Orientation="Horizontal" />
+                    Height="70"
+                    Margin="0 0 0 8"
+                    HorizontalAlignment="Stretch"
+                    Rows="1" />
 
                 <StackPanel
                     Grid.Row="2"
@@ -92,11 +94,13 @@
                         FontWeight="ExtraBold"
                         Text="{x:Static lang:Resources.Brightness}" />
                 </StackPanel>
-                <WrapPanel
+                <UniformGrid
                     x:Name="BrightnessPanel"
                     Grid.Row="3"
-                    HorizontalAlignment="Center"
-                    Orientation="Horizontal" />
+                    Height="70"
+                    Margin="0 0 0 8"
+                    HorizontalAlignment="Stretch"
+                    Rows="1" />
 
                 <StackPanel
                     Grid.Row="4"
@@ -116,11 +120,13 @@
                         FontWeight="ExtraBold"
                         Text="{x:Static lang:Resources.Hues}" />
                 </StackPanel>
-                <WrapPanel
+                <UniformGrid
                     x:Name="HuePanel"
                     Grid.Row="5"
-                    HorizontalAlignment="Center"
-                    Orientation="Horizontal" />
+                    Height="70"
+                    Margin="0 0 0 8"
+                    HorizontalAlignment="Stretch"
+                    Rows="1" />
             </Grid>
 
             <StackPanel Grid.Column="2" Orientation="Horizontal">

@@ -15,15 +15,13 @@
     Foreground="{DynamicResource Foreground1}"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid SizeChanged="Page_SizeChanged">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!-- Row 0: 开始使用 -->
+        <!-- Row 0: 标题（不再分组，全部导航集中一排展示） -->
         <StackPanel
             Grid.Row="0"
             Margin="10"
@@ -42,34 +40,20 @@
                 Text="{x:Static lang:Resources.GetStarted}" />
         </StackPanel>
 
-        <WrapPanel
-            x:Name="GetStartedPanel"
+        <!-- Row 1: 全部功能导航块：与颜色书签一致，每行最多 5 个、占满整行、弹性缩放 -->
+        <ItemsControl
+            x:Name="NavPanel"
             Grid.Row="1"
-            Orientation="Horizontal" />
-
-        <!-- Row 2: 探索 -->
-        <StackPanel
-            Grid.Row="2"
-            Margin="10"
-            Orientation="Horizontal">
-            <TextBlock
-                VerticalAlignment="Center"
-                FontFamily="../Fonts/#FluentSystemIcons-Regular"
-                FontSize="16"
-                Foreground="{DynamicResource AccentColor}"
-                Text="&#xF311;" />
-            <TextBlock
-                Margin="5 0 0 0"
-                VerticalAlignment="Center"
-                FontSize="14"
-                FontWeight="ExtraBold"
-                Text="{x:Static lang:Resources.Discover}" />
-        </StackPanel>
-
-        <WrapPanel
-            x:Name="DiscoverPanel"
-            Grid.Row="3"
-            Orientation="Horizontal" />
+            Margin="5"
+            ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid
+                        Columns="{Binding NavColumns, RelativeSource={RelativeSource AncestorType=Page}}"
+                        IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
 
         <Popup
             x:Name="ContrastPopup"

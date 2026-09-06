@@ -168,24 +168,43 @@ public partial class TextPage : Page
 	bool isForeground = false;
 	private void ForegroundBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		isForeground = true;
-
-		var bg = ForegroundBorder.Background as SolidColorBrush;
-		ColorInfo = new(new(bg.Color.R, bg.Color.G, bg.Color.B));
-
-		RgbBtn_Click(SelectedColorBtn, null);
-		ColorSelector.IsOpen = true;
+        var bg = ForegroundBorder.Background as SolidColorBrush;
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            bg?.Color ?? Colors.Black,
+            owner,
+            (c) => {
+                foreground = System.Drawing.Color.FromArgb(c.R, c.G, c.B);
+                var color = new SolidColorBrush(c);
+                ForegroundBorder.Background = color;
+                RegularTxt.Foreground = color;
+                ItalicTxt.Foreground = color;
+                BoldTxt.Foreground = color;
+                LoadConstrastUI();
+            }
+        );
+        dialog.Show();
 	}
 
 	private void BackgroundBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		isForeground = false;
-
-		var bg = BackgroundBorder.Background as SolidColorBrush;
-		ColorInfo = new(new(bg.Color.R, bg.Color.G, bg.Color.B));
-
-		RgbBtn_Click(SelectedColorBtn, null);
-		ColorSelector.IsOpen = true;
+        var bg = BackgroundBorder.Background as SolidColorBrush;
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            bg?.Color ?? Colors.Black,
+            owner,
+            (c) => {
+                background = System.Drawing.Color.FromArgb(c.R, c.G, c.B);
+                var color = new SolidColorBrush(c);
+                BackgroundBorder.Background = color;
+                RegularTxt.Background = color;
+                ItalicTxt.Background = color;
+                BoldTxt.Background = color;
+                TextPanel.Background = color;
+                LoadConstrastUI();
+            }
+        );
+        dialog.Show();
 	}
 	readonly Random random = new();
 

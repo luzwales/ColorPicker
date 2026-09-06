@@ -24,6 +24,26 @@
             Grid.ColumnSpan="3"
             Margin="10"
             Orientation="Horizontal">
+            <Button
+                x:Name="BackBtn"
+                Margin="0 0 10 0"
+                Padding="6 3"
+                VerticalAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="BackBtn_Click"
+                Content="&#xE72B;"
+                FontFamily="Segoe MDL2 Assets"
+                FontSize="12"
+                Foreground="{DynamicResource Foreground1}"
+                Style="{DynamicResource DefaultButton}">
+                <Button.ToolTip>
+                    <ToolTip
+                        Background="{DynamicResource Background1}"
+                        Content="返回上一页"
+                        Foreground="{DynamicResource Foreground1}" />
+                </Button.ToolTip>
+            </Button>
             <TextBlock
                 VerticalAlignment="Center"
                 FontFamily="../Fonts/#FluentSystemIcons-Regular"

@@ -29,41 +29,50 @@ using System.Windows.Media;
 
 namespace ColorPicker.UserControls;
 
-/// <summary>
-/// A thin wrapper around PixiEditor.ColorPicker's <c>SquarePicker</c> (circular hue wheel + HSV/HSL square).
-/// The picker is instantiated via reflection so we avoid the assembly-name clash with this project's own
-/// "ColorPicker" assembly (which would otherwise bind <c>SquarePicker</c> to the wrong assembly at runtime).
-/// Exposes <see cref="SelectedColor"/> and <see cref="ColorChanged"/>. The inner library's
-/// <c>ColorRoutedEventArgs</c> is forwarded unchanged, so consumers can read its <c>.Color</c> property.
-/// </summary>
-public class ColorWheelControl : ContentControl
+public partial class ColorWheelControl : UserControl
 {
-	private static readonly Assembly LibAssembly = LoadLibrary();
-	private static readonly Type PickerType = LibAssembly.GetType("ColorPicker.SquarePicker")!;
-
+	private static Assembly? _libAssembly;
+	private static Type? _pickerType;
 	private readonly object _picker;
+    private static Type PickerType => _pickerType ??= _libAssembly!.GetType("ColorPicker.SquarePicker")!;
+
+    private bool _isInternalUpdate = false;
 
 	public ColorWheelControl()
 	{
-		_picker = Activator.CreateInstance(PickerType)!;
-		if (_picker is FrameworkElement fe)
-		{
-			fe.HorizontalAlignment = HorizontalAlignment.Stretch;
-			fe.VerticalAlignment = VerticalAlignment.Stretch;
-			fe.Margin = new Thickness(0);
+		try {
+			if (_libAssembly == null) _libAssembly = LoadLibrary();
+			if (_pickerType == null) _pickerType = _libAssembly.GetType("ColorPicker.SquarePicker")!;
+
+			InitializeComponent();
+			_picker = Activator.CreateInstance(PickerType)!;
+			
+			PickerContainer.Content = _picker;
+
+			var colorChanged = PickerType.GetEvent("ColorChanged")!;
+			colorChanged.AddEventHandler(_picker, new RoutedEventHandler(OnPickerColorChanged));
+		} catch (Exception ex) {
+			System.IO.File.WriteAllText(@"C:\tmp\colorpicker_error.txt", "Constructor: " + ex.ToString());
+			throw;
 		}
-
-		Content = _picker;
-
-		var colorChanged = PickerType.GetEvent("ColorChanged")!;
-		var handler = new RoutedEventHandler(OnPickerColorChanged);
-		colorChanged.AddEventHandler(_picker, handler);
 	}
 
 	private void OnPickerColorChanged(object sender, RoutedEventArgs e)
 	{
-		// Forward the library's ColorRoutedEventArgs (which carries .Color) to our own event.
-		ColorChanged?.Invoke(this, e);
+        if (_isInternalUpdate) return;
+
+        // 强力反射提取内部选择的颜色，更新我们暴露的 SelectedColor 依赖属性
+        try {
+            var prop = PickerType.GetProperty("SelectedColor")!;
+            var color = (Color)prop.GetValue(_picker)!;
+            
+            _isInternalUpdate = true;
+            SelectedColor = color;
+            _isInternalUpdate = false;
+
+            // 触发事件通知 ColorPickerDialog 刷新颜色
+            ColorChanged?.Invoke(this, new RoutedEventArgs());
+        } catch {}
 	}
 
 	public static readonly DependencyProperty SelectedColorProperty =
@@ -82,17 +91,20 @@ public class ColorWheelControl : ContentControl
 	private static void OnSelectedColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 	{
 		var ctrl = (ColorWheelControl)d;
-		var prop = PickerType.GetProperty("SelectedColor")!;
-		prop.SetValue(ctrl._picker, (Color)e.NewValue);
+        if (ctrl._isInternalUpdate) return;
+
+        try {
+		    var prop = PickerType.GetProperty("SelectedColor")!;
+            ctrl._isInternalUpdate = true;
+		    prop.SetValue(ctrl._picker, (Color)e.NewValue);
+            ctrl._isInternalUpdate = false;
+        } catch {}
 	}
 
 	private static Assembly LoadLibrary()
 	{
 		try
 		{
-			// The library's assembly is also named "ColorPicker" (same as this app's exe), so we must
-			// load it by its full strong name (with version + PublicKeyToken) to disambiguate it from
-			// this project's own "ColorPicker" assembly.
 			return Assembly.Load("ColorPicker, Version=3.4.1.0, Culture=neutral, PublicKeyToken=1c61eec504ce2276");
 		}
 		catch

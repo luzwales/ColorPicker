@@ -6,8 +6,9 @@
     xmlns:local="clr-namespace:ColorPicker.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Height="65"
-    MinWidth="200"
+    MinWidth="120"
     Margin="5"
+    HorizontalContentAlignment="Stretch"
     FontFamily="../Fonts/#Hauora"
     Foreground="{DynamicResource Foreground1}"
     mc:Ignorable="d">

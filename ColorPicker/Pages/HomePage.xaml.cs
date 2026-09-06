@@ -47,23 +47,46 @@ public partial class HomePage : Page
 		InitUI();
 	}
 
+	// 依赖属性：主页导航块列数（最多 5 列，随宽度弹性变化）
+	public static readonly DependencyProperty NavColumnsProperty =
+		DependencyProperty.Register(
+			nameof(NavColumns),
+			typeof(int),
+			typeof(HomePage),
+			new PropertyMetadata(5));
+
+	public int NavColumns
+	{
+		get => (int)GetValue(NavColumnsProperty);
+		set => SetValue(NavColumnsProperty, value);
+	}
+
 	internal void InitUI()
 	{
-		List<PageInfo> relevantPages = Global.SynethiaConfig.MostRelevantPages;
-		for (int i = 0; i < 4; i++)
-		{
-			GetStartedPanel.Children.Add(new PageCard(Global.PageInfoToAppPages(relevantPages[i])));
-		}
-		relevantPages.RemoveRange(0, 4); // Remove already added pages; the least releavnt remains
+		NavPanel.Items.Clear();
 
-		// Load "Discover" section
+		// 不再分组：所有功能导航统一放一排，先 5 个一行、铺满整行、随宽度弹性变化
+		List<PageInfo> relevantPages = new(Global.SynethiaConfig.MostRelevantPages);
 		for (int i = 0; i < relevantPages.Count; i++)
 		{
 			if (relevantPages[i].Name == "Harmonies") continue;
-			DiscoverPanel.Children.Add(new PageCard(Global.PageInfoToAppPages(relevantPages[i])));
+			NavPanel.Items.Add(new PageCard(Global.PageInfoToAppPages(relevantPages[i])));
 		}
 
 		LoadPaletteUI();
+	}
+
+	private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+	{
+		// 与颜色书签一致：每行最多 5 个；当单块可分配宽度 < 220px 时减少列数
+		double width = e.NewSize.Width - 10;
+		if (width <= 0) return;
+		int cols = 5;
+		while (cols > 1 && width / cols < 220)
+		{
+			cols--;
+		}
+		NavColumns = cols;
 	}
 
 	private void GetContrastBtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -85,15 +108,23 @@ public partial class HomePage : Page
 		catch { }
 	}
 
-	private void LoadPaletteUI()
+	private void LoadPaletteUI(Color? targetColor = null)
 	{
 		PalettePanel.Children.Clear();
 
-		(int r, int g, int b) = Global.GenerateRandomColor();
-		ColorInfo color = new(new((byte)r, (byte)g, (byte)b));
+		ColorInfo color;
+        if (targetColor.HasValue)
+        {
+            color = new(new(targetColor.Value.R, targetColor.Value.G, targetColor.Value.B));
+        }
+        else
+        {
+		    (int r, int g, int b) = Global.GenerateRandomColor();
+		    color = new(new((byte)r, (byte)g, (byte)b));
+        }
 
-		ColorBorder.Background = new SolidColorBrush { Color = Color.FromRgb((byte)r, (byte)g, (byte)b) };
-		ColorBorder.Effect = new DropShadowEffect() { BlurRadius = 15, ShadowDepth = 0, Color = Color.FromRgb((byte)r, (byte)g, (byte)b) };
+		ColorBorder.Background = new SolidColorBrush { Color = Color.FromRgb(color.RGB.R, color.RGB.G, color.RGB.B) };
+		ColorBorder.Effect = new DropShadowEffect() { BlurRadius = 15, ShadowDepth = 0, Color = Color.FromRgb(color.RGB.R, color.RGB.G, color.RGB.B) };
 		ColorBorder.ToolTip = new ToolTip()
 		{
 			Background = Global.GetColorFromResource("Background1"),
@@ -159,7 +190,16 @@ public partial class HomePage : Page
 
 	private void ColorBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		LoadPaletteUI();
+        var bg = ColorBorder.Background as SolidColorBrush;
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            bg?.Color ?? Colors.Black,
+            owner,
+            (c) => {
+                LoadPaletteUI(c);
+            }
+        );
+        dialog.Show();
 	}
 
 	// ============================

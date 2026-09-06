@@ -327,14 +327,17 @@ public partial class ContrastPage : Page
 
 	internal void ColorBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		try
-		{
-			(int r, int g, int b) = Global.GenerateRandomColor();
-			ColorInfo = new(new((byte)r, (byte)g, (byte)b));
-			Global.SynethiaConfig.ActionsInfo[9].UsageCount++; // Increment the usage counter
-		}
-		catch { }
-		RgbBtn_Click(SelectedColorBtn, null);
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            Color.FromRgb(ColorInfo.RGB.R, ColorInfo.RGB.G, ColorInfo.RGB.B),
+            owner,
+            (c) => {
+                ColorInfo = new ColorInfo(new RGB(c.R, c.G, c.B));
+                Global.SynethiaConfig.ActionsInfo[9].UsageCount++;
+                RgbBtn_Click(SelectedColorBtn, null);
+            }
+        );
+        dialog.Show();
 	}
 
 	private void BookmarkBtn_Click(object sender, RoutedEventArgs e)

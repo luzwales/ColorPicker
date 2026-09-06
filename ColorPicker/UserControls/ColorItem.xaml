@@ -6,15 +6,17 @@
     xmlns:lang="clr-namespace:ColorPicker.Properties"
     xmlns:local="clr-namespace:ColorPicker.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Width="250"
     Height="110"
+    MinWidth="170"
+    HorizontalContentAlignment="Stretch"
     FontFamily="../Fonts/#Hauora"
     Foreground="{DynamicResource Foreground1}"
     mc:Ignorable="d">
     <Border
         Margin="10"
         Background="{DynamicResource CardBackground}"
-        CornerRadius="10">
+        CornerRadius="10"
+        HorizontalAlignment="Stretch">
         <Border.Effect>
             <DropShadowEffect
                 BlurRadius="15"
@@ -104,7 +106,7 @@
 
             <StackPanel
                 Grid.Column="1"
-                Grid.ColumnSpan="8"
+                Grid.ColumnSpan="1"
                 Margin="5"
                 VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal">
@@ -115,8 +117,10 @@
                     <TextBlock
                         x:Name="RgbTxt"
                         Margin="10 0 0 0"
+                        MaxWidth="150"
                         FontWeight="ExtraBold"
-                        Text="{x:Static lang:Resources.HEX}" />
+                        Text="{x:Static lang:Resources.HEX}"
+                        TextTrimming="CharacterEllipsis" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
@@ -126,12 +130,14 @@
                     <TextBlock
                         x:Name="HEXTxt"
                         Margin="10 0 0 0"
+                        MaxWidth="150"
                         FontWeight="ExtraBold"
-                        Text="{x:Static lang:Resources.HEX}" />
+                        Text="{x:Static lang:Resources.HEX}"
+                        TextTrimming="CharacterEllipsis" />
                 </StackPanel>
             </StackPanel>
 
-            <StackPanel Grid.Column="2" Orientation="Horizontal">
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Top">
                 <TextBlock
                     x:Name="NoteIcon"
                     Margin="0 6 5 0"

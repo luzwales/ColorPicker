@@ -139,12 +139,18 @@ public partial class GradientPage : Page
 	internal System.Drawing.Color from, to;
 	private void ForegroundBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		var bg = ForegroundBorder.Background as SolidColorBrush;
-		ColorInfo = new(new(bg.Color.R, bg.Color.G, bg.Color.B));
-		RgbBtn_Click(SelectedColorBtn, null);
-
-		ColorSelector.IsOpen = true;
-		isColor1 = true;
+        var bg = ForegroundBorder.Background as SolidColorBrush;
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            bg?.Color ?? Colors.Black,
+            owner,
+            (c) => {
+                from = System.Drawing.Color.FromArgb(c.R, c.G, c.B);
+                ForegroundBorder.Background = new SolidColorBrush(c);
+                LoadGradientUI();
+            }
+        );
+        dialog.Show();
 	}
 
 	private void GenerateGradientBtn_Click(object sender, RoutedEventArgs e)
@@ -191,12 +197,18 @@ public partial class GradientPage : Page
 
 	private void BackgroundBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		var bg = BackgroundBorder.Background as SolidColorBrush;
-		ColorInfo = new(new(bg.Color.R, bg.Color.G, bg.Color.B));
-		RgbBtn_Click(SelectedColorBtn, null);
-
-		ColorSelector.IsOpen = true;
-		isColor1 = false;
+        var bg = BackgroundBorder.Background as SolidColorBrush;
+        var owner = Window.GetWindow(this);
+        var dialog = new Windows.ColorPickerDialog(
+            bg?.Color ?? Colors.Black,
+            owner,
+            (c) => {
+                to = System.Drawing.Color.FromArgb(c.R, c.G, c.B);
+                BackgroundBorder.Background = new SolidColorBrush(c);
+                LoadGradientUI();
+            }
+        );
+        dialog.Show();
 	}
 	bool isColor1 = false;
 	private void UnCheckAllButtons()
