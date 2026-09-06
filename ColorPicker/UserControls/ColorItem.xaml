@@ -44,62 +44,11 @@
                 Cursor="Hand"
                 MouseLeftButtonUp="ColorBorder_MouseLeftButtonUp">
                 <Border.ContextMenu>
-                    <ContextMenu Style="{DynamicResource ContextMenuStyle}">
-                        <MenuItem
-                            x:Name="CopyRGB"
-                            Click="CopyRGB_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyRGB}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyHEX"
-                            Click="CopyHEX_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyHEX}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyHSV"
-                            Click="CopyHSV_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyHSV}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyHSL"
-                            Click="CopyHSL_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyHSL}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyCMYK"
-                            Click="CopyCMYK_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyCMYK}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyDEC"
-                            Click="CopyDEC_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyDEC}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyXYZ"
-                            Click="CopyXYZ_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyXYZ}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyYIQ"
-                            Click="CopyYIQ_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyYIQ}"
-                            Style="{DynamicResource MenuStyle}" />
-                        <MenuItem
-                            x:Name="CopyYUV"
-                            Click="CopyYUV_Click"
-                            Foreground="{DynamicResource Foreground1}"
-                            Header="{x:Static lang:Resources.CopyYUV}"
-                            Style="{DynamicResource MenuStyle}" />
-                    </ContextMenu>
+                    <!-- 菜单项在右键打开时动态构建（见 ColorItem.xaml.cs）：
+                         避免每张书签卡创建时解析 8 个静态菜单项造成卡顿 -->
+                    <ContextMenu
+                        x:Name="ColorContextMenu"
+                        Style="{DynamicResource ContextMenuStyle}" />
                 </Border.ContextMenu>
             </Border>
 

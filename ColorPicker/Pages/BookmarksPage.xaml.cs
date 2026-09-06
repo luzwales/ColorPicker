@@ -144,7 +144,7 @@ public partial class BookmarksPage : Page
 				var snapshot = new string[Global.Bookmarks.ColorBookmarks.Count];
 				for (int x = 0; x < snapshot.Length; x++) snapshot[x] = Global.Bookmarks.ColorBookmarks[x];
 
-				const int chunk = 30;
+				const int chunk = 6; // 每帧只建 6 张，保证 UI 线程不被长时间占用
 				for (int i = 0; i < snapshot.Length; i++)
 				{
 					var item = new ColorItem(snapshot[i]);
@@ -207,7 +207,7 @@ public partial class BookmarksPage : Page
 			var snapshot = new string[Global.Bookmarks.PaletteBookmarks.Count];
 			for (int x = 0; x < snapshot.Length; x++) snapshot[x] = Global.Bookmarks.PaletteBookmarks[x];
 
-			const int chunk = 8; // 每张调色板卡很重（含多条色板），批次更小
+			const int chunk = 3; // 调色板卡最重，每帧只建 3 张
 			for (int i = 0; i < snapshot.Length; i++)
 			{
 				var item = new PaletteItem(snapshot[i]);

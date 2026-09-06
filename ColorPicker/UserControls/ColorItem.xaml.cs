@@ -45,6 +45,38 @@ public partial class ColorItem : UserControl
 		ColorInfo = new(ColorHelper.ColorConverter.HexToRgb(new(HexColor)));
 
 		InitUI();
+
+		// 右键菜单延迟到真正打开时才构建一次，避免每张卡创建时解析 8 个静态菜单项
+		ColorContextMenu.Opened += (_, _) => BuildContextMenu();
+	}
+
+	private bool _menuBuilt;
+	private void BuildContextMenu()
+	{
+		if (_menuBuilt || ColorContextMenu.Items.Count > 0) return;
+		_menuBuilt = true;
+
+		void Add(string header, RoutedEventHandler handler)
+		{
+			MenuItem item = new()
+			{
+				Header = header,
+				Style = (Style)FindResource("MenuStyle")
+			};
+			item.SetResourceReference(MenuItem.ForegroundProperty, "Foreground1");
+			item.Click += handler;
+			ColorContextMenu.Items.Add(item);
+		}
+
+		Add(Properties.Resources.CopyRGB, CopyRGB_Click);
+		Add(Properties.Resources.CopyHEX, CopyHEX_Click);
+		Add(Properties.Resources.CopyHSV, CopyHSV_Click);
+		Add(Properties.Resources.CopyHSL, CopyHSL_Click);
+		Add(Properties.Resources.CopyCMYK, CopyCMYK_Click);
+		Add(Properties.Resources.CopyDEC, CopyDEC_Click);
+		Add(Properties.Resources.CopyXYZ, CopyXYZ_Click);
+		Add(Properties.Resources.CopyYIQ, CopyYIQ_Click);
+		Add(Properties.Resources.CopyYUV, CopyYUV_Click);
 	}
 
 	private int GetIndex()
