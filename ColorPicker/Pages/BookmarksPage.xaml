@@ -316,19 +316,33 @@
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
 
-            <!-- 3. 渐变书签、4. 文本书签：均等同调色板，一行固定最多 2 列，保证显示完全 -->
-            <ItemsControl x:Name="GradientsBookmarks" Visibility="Collapsed" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <!-- 3. 渐变书签、4. 文本书签：最多 4 列的网格，整块水平居中，卡片自上而下排布 -->
+            <ItemsControl
+                x:Name="GradientsBookmarks"
+                HorizontalAlignment="Center"
+                Visibility="Collapsed"
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <UniformGrid Columns="{Binding PaletteGridColumns, RelativeSource={RelativeSource AncestorType=Page}}" IsItemsHost="True" />
+                        <UniformGrid Columns="{Binding WideGridColumns, RelativeSource={RelativeSource AncestorType=Page}}" IsItemsHost="True" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
 
-            <ItemsControl x:Name="TextBookmarks" Visibility="Collapsed" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ItemsControl
+                x:Name="TextBookmarks"
+                HorizontalAlignment="Center"
+                Visibility="Collapsed"
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <UniformGrid Columns="{Binding PaletteGridColumns, RelativeSource={RelativeSource AncestorType=Page}}" IsItemsHost="True" />
+                        <UniformGrid Columns="{Binding WideGridColumns, RelativeSource={RelativeSource AncestorType=Page}}" IsItemsHost="True" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>

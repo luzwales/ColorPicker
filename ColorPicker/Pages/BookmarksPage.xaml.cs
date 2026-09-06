@@ -64,6 +64,20 @@ public partial class BookmarksPage : Page
         set => SetValue(PaletteGridColumnsProperty, value);
     }
 
+    // 依赖属性：渐变 / 文本书签卡片列数（最多 4 列）
+    public static readonly DependencyProperty WideGridColumnsProperty =
+        DependencyProperty.Register(
+            nameof(WideGridColumns),
+            typeof(int),
+            typeof(BookmarksPage),
+            new PropertyMetadata(4));
+
+    public int WideGridColumns
+    {
+        get => (int)GetValue(WideGridColumnsProperty);
+        set => SetValue(WideGridColumnsProperty, value);
+    }
+
 	public BookmarksPage()
 	{
 		InitializeComponent();
@@ -537,12 +551,31 @@ public partial class BookmarksPage : Page
         }
         GridColumns = colorCols;
 
-        // 调色板/渐变/文本卡片：内容较宽，最多 2 列；每块宽 < 380px 时降到 1 列（避免挤压换行）
+        // 调色板卡片：内容较宽，最多 2 列；每块宽 < 380px 时降到 1 列（避免挤压换行）
         int paletteCols = 2;
         while (paletteCols > 1 && width / paletteCols < 380)
         {
             paletteCols--;
         }
         PaletteGridColumns = paletteCols;
+
+        // 渐变 / 文本卡片：最多 4 列，整块在页面内水平居中、自上而下排列；
+        // 每列按约 300px 估宽，屏幕变窄时自动减列
+        int wideCols = 4;
+        while (wideCols > 1 && width / wideCols < 280)
+        {
+            wideCols--;
+        }
+        WideGridColumns = wideCols;
+
+        double blockWidth = Math.Min(width, wideCols * 300);
+        if (GradientsBookmarks != null && Math.Abs(GradientsBookmarks.Width - blockWidth) > 1)
+        {
+            GradientsBookmarks.Width = blockWidth;
+        }
+        if (TextBookmarks != null && Math.Abs(TextBookmarks.Width - blockWidth) > 1)
+        {
+            TextBookmarks.Width = blockWidth;
+        }
     }
 }
