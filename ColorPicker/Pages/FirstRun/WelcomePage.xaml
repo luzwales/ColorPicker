@@ -34,7 +34,7 @@
                 x:Name="IconImg"
                 Height="75"
                 HorizontalAlignment="Center"
-                Source="../../Images/CPM.png" />
+                Source="../../Images/logo.png" />
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <TextBlock
                     FontSize="32"

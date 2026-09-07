@@ -99,6 +99,9 @@
 	<Resource Include="Images\LightTheme.png">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
+	<Resource Include="Images\logo.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
 	<Resource Include="Images\SystemTheme.png">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
