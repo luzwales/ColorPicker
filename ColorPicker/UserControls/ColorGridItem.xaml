@@ -9,7 +9,8 @@
     Width="Auto"
     Height="Auto"
     mc:Ignorable="d">
-    <Border
+    <Grid>
+        <Border
         x:Name="ColorBorder"
         Margin="1"
         d:Background="White"
@@ -45,4 +46,13 @@
             </ToolTip>
         </Border.ToolTip>
     </Border>
+        <Popup
+            x:Name="DetailsPopup"
+            AllowsTransparency="True"
+            Placement="MousePoint"
+            PopupAnimation="Fade"
+            StaysOpen="False">
+            <local:ColorDetailsPopup x:Name="DetailsPopupContent" Margin="10" />
+        </Popup>
+    </Grid>
 </UserControl>

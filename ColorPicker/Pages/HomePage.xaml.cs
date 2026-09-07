@@ -45,6 +45,18 @@ public partial class HomePage : Page
 	{
 		InitializeComponent();
 		InitUI();
+
+		// 离开页面时关闭详情 Popup，避免它悬浮在其他页面上
+		Unloaded += (o, e) => DetailsPopup.IsOpen = false;
+	}
+
+	/// <summary>
+	/// 在鼠标位置显示颜色详情（与色轮 Popup 行为一致：点击其它位置自动关闭，同时只存在一个）。
+	/// </summary>
+	internal void ShowDetailsPopup(Color color)
+	{
+		DetailsPopupContent.LoadColor(color);
+		DetailsPopup.IsOpen = true;
 	}
 
 	// 依赖属性：主页导航块列数（最多 5 列，随宽度弹性变化）
@@ -180,7 +192,7 @@ public partial class HomePage : Page
 
 			border.MouseRightButtonUp += (o, e) =>
 			{
-				new ColorDetailsWindow(new SolidColorBrush { Color = Color.FromRgb(hues[j].R, hues[j].G, hues[j].B) }).Show();
+				ShowDetailsPopup(Color.FromRgb(hues[j].R, hues[j].G, hues[j].B));
 				PalettePopup.IsOpen = false;
 			};
 

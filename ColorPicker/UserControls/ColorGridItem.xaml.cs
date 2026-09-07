@@ -69,11 +69,14 @@ public partial class ColorGridItem : UserControl
 
 	private void ForegroundDetails_Click(object sender, RoutedEventArgs e)
 	{
-		new ColorDetailsWindow(new SolidColorBrush { Color = Color.FromRgb(ForegroundColor.R, ForegroundColor.G, ForegroundColor.B) }).Show();
+		// 与色轮一致：用轻量 Popup 展示详情，点击其它位置自动关闭
+		DetailsPopupContent.LoadColor(Color.FromRgb(ForegroundColor.R, ForegroundColor.G, ForegroundColor.B));
+		DetailsPopup.IsOpen = true;
 	}
 
 	private void BackgroundDetails_Click(object sender, RoutedEventArgs e)
 	{
-		new ColorDetailsWindow(new SolidColorBrush { Color = Color.FromRgb(BackgroundColor.R, BackgroundColor.G, BackgroundColor.B) }).Show();
+		DetailsPopupContent.LoadColor(Color.FromRgb(BackgroundColor.R, BackgroundColor.G, BackgroundColor.B));
+		DetailsPopup.IsOpen = true;
 	}
 }

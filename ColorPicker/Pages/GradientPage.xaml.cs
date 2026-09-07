@@ -49,7 +49,19 @@ public partial class GradientPage : Page
 		InitializeComponent();
 		InitUI();
 
+		// 离开页面时关闭详情 Popup，避免它悬浮在其他页面上
+		Unloaded += (o, e) => DetailsPopup.IsOpen = false;
+
 		Loaded += (o, e) => SynethiaManager.InjectSynethiaCode(this, Global.SynethiaConfig.PagesInfo, 5, ref code); // injects the code in the page
+	}
+
+	/// <summary>
+	/// 在鼠标位置显示颜色详情（与色轮 Popup 行为一致：点击其它位置自动关闭，同时只存在一个）。
+	/// </summary>
+	internal void ShowDetailsPopup(Color color)
+	{
+		DetailsPopupContent.LoadColor(color);
+		DetailsPopup.IsOpen = true;
 	}
 
 	private void InitUI()
@@ -455,7 +467,8 @@ public partial class GradientPage : Page
 
 	private void ForegroundBorder_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		new ColorDetailsWindow((SolidColorBrush)((Border)sender).Background).Show();
+		if (((Border)sender).Background is not SolidColorBrush brush) return;
+		ShowDetailsPopup(brush.Color);
 	}
 
 	private void ExpandCssBtn_Click(object sender, RoutedEventArgs e)

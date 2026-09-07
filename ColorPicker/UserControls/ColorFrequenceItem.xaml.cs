@@ -56,6 +56,8 @@ public partial class ColorFrequenceItem : UserControl
 
 	private void ColorBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		new ColorDetailsWindow(new SolidColorBrush { Color = System.Windows.Media.Color.FromRgb(Color.R, Color.G, Color.B) }).Show();
+		// 与色轮一致：用轻量 Popup 展示详情，点击其它位置自动关闭
+		DetailsPopupContent.LoadColor(System.Windows.Media.Color.FromRgb(Color.R, Color.G, Color.B));
+		DetailsPopup.IsOpen = true;
 	}
 }

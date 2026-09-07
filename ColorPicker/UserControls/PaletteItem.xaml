@@ -189,6 +189,14 @@
                     </Button.ToolTip>
                 </Button>
             </StackPanel>
+            <Popup
+                x:Name="DetailsPopup"
+                AllowsTransparency="True"
+                Placement="MousePoint"
+                PopupAnimation="Fade"
+                StaysOpen="False">
+                <local:ColorDetailsPopup x:Name="DetailsPopupContent" Margin="10" />
+            </Popup>
         </Grid>
     </Border>
 </UserControl>

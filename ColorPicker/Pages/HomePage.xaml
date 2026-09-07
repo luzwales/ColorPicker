@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:lang="clr-namespace:ColorPicker.Properties"
     xmlns:local="clr-namespace:ColorPicker.Pages"
+    xmlns:uc="clr-namespace:ColorPicker.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="Home"
     Title="HomePage"
@@ -254,6 +255,14 @@
                         Orientation="Horizontal" />
                 </Grid>
             </Border>
+        </Popup>
+        <Popup
+            x:Name="DetailsPopup"
+            AllowsTransparency="True"
+            Placement="MousePoint"
+            PopupAnimation="Fade"
+            StaysOpen="False">
+            <uc:ColorDetailsPopup x:Name="DetailsPopupContent" Margin="10" />
         </Popup>
     </Grid>
 </Page>

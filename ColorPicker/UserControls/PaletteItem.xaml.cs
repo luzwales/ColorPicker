@@ -128,7 +128,9 @@ public partial class PaletteItem : UserControl
 
 				border.MouseRightButtonUp += (o, e) =>
 				{
-					new ColorDetailsWindow(new SolidColorBrush { Color = Color.FromRgb(shades[j].R, shades[j].G, shades[j].B) }).Show();
+					// 与色轮一致：用轻量 Popup 展示详情，点击其它位置自动关闭
+					DetailsPopupContent.LoadColor(Color.FromRgb(shades[j].R, shades[j].G, shades[j].B));
+					DetailsPopup.IsOpen = true;
 				};
 				if (k == 0) ShadesPanel.Children.Add(border);
 				else if (k == 1) BrightnessPanel.Children.Add(border);
