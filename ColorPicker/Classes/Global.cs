@@ -139,7 +139,7 @@ public static class Global
 	}
 	public static string LastVersionLink => "https://raw.githubusercontent.com/luzwales/ColorPicker/main/Version.txt";
 
-	public static string Version => "1.2.2";
+	public static string Version => "1.2.3";
 
 	public static string HiSentence
 	{

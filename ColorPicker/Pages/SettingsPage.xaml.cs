@@ -151,31 +151,26 @@ public partial class SettingsPage : Page
 
 	private async void CheckUpdateBtn_Click(object sender, RoutedEventArgs e)
 	{
-		string lastVersion = await Update.GetLastVersionAsync(Global.LastVersionLink);
-		if (Update.IsAvailable(Global.Version, lastVersion))
+		try
 		{
-			updatesAvailable = true;
-			LoadUpdateSection();
-
-#if PORTABLE
-			MessageBox.Show(Properties.Resources.PortableNoAutoUpdates, $"{Properties.Resources.InstallVersion} {lastVersion}", MessageBoxButton.OK, MessageBoxImage.Information);
-			return;
-#else
-			if (MessageBox.Show(Properties.Resources.InstallConfirmMsg, $"{Properties.Resources.InstallVersion} {lastVersion}", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)
+			string lastVersion = await Update.GetLastVersionAsync(Global.LastVersionLink);
+			if (Update.IsAvailable(Global.Version, lastVersion))
 			{
-				return;
+				updatesAvailable = true;
+				LoadUpdateSection();
+
+				if (MessageBox.Show(string.Format(Properties.Resources.InstallConfirmMsg, lastVersion), $"{Properties.Resources.InstallVersion} {lastVersion}", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
+				{
+					Process.Start(new ProcessStartInfo("https://github.com/luzwales/ColorPicker/releases") { UseShellExecute = true });
+				}
 			}
-#endif
-
-			// If the user wants to proceed.
-			SynethiaManager.Save(Global.SynethiaConfig, Global.SynethiaPath);
-			XmlSerializerManager.SaveToXml(Global.Settings, Global.SettingsPath);
-			XmlSerializerManager.SaveToXml(Global.Bookmarks, Global.BookmarksPath);
-
-			Sys.ExecuteAsAdmin(Directory.GetCurrentDirectory() + @"\Xalyus Updater.exe"); // Start the updater
-			Application.Current.Shutdown(); // Close
+			else
+			{
+				updatesAvailable = false;
+				LoadUpdateSection();
+			}
 		}
-		else
+		catch
 		{
 			updatesAvailable = false;
 			LoadUpdateSection();
