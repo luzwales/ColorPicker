@@ -161,6 +161,23 @@ public partial class PaletteItem : UserControl
 		Global.PalettePage.InitPaletteUI();
 	}
 
+    // 书签处理逻辑
+    private void BookmarkBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Global.Bookmarks.PaletteBookmarks.Contains(HexColor))
+        {
+            Global.Bookmarks.PaletteBookmarks.Remove(HexColor);
+            BookmarkBtn.Content = "\uF1F6";
+            BookmarkToolTip.Content = Properties.Resources.AddBookmark;
+        }
+        else
+        {
+            Global.Bookmarks.PaletteBookmarks.Add(HexColor);
+            BookmarkBtn.Content = "\uF1F8";
+            BookmarkToolTip.Content = Properties.Resources.RemoveBookmark;
+        }
+    }
+
 	public static event EventHandler<PageEventArgs> GoClick;
 
 	private void GoBtn_Click(object sender, RoutedEventArgs e)

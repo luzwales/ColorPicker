@@ -168,6 +168,26 @@
                             Foreground="{DynamicResource Foreground1}" />
                     </Button.ToolTip>
                 </Button>
+                <!-- 书签按钮 (复用组件) -->
+                <Button
+                    x:Name="BookmarkBtn"
+                    Margin="0 5 5 0"
+                    Padding="5"
+                    VerticalAlignment="Top"
+                    Background="{DynamicResource Background3}"
+                    Click="BookmarkBtn_Click"
+                    Content="&#xF1F6;"
+                    FontFamily="..\Fonts\#FluentSystemIcons-Regular"
+                    Foreground="{DynamicResource Foreground1}"
+                    Style="{DynamicResource DefaultButton}">
+                    <Button.ToolTip>
+                        <ToolTip
+                            x:Name="BookmarkToolTip"
+                            Background="{DynamicResource Background1}"
+                            Content="{x:Static lang:Resources.AddBookmark}"
+                            Foreground="{DynamicResource Foreground1}" />
+                    </Button.ToolTip>
+                </Button>
             </StackPanel>
         </Grid>
     </Border>

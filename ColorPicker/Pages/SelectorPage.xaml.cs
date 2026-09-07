@@ -287,17 +287,8 @@ public partial class SelectorPage : Page
 		{
 			if (!Global.Settings.UseKeyboardShortcuts) return;
 
-			Clipboard.SetDataObject(SelectedColorType switch
-			{
-				ColorTypes.HEX => $"#{ColorInfo.HEX.Value}",
-				ColorTypes.HSL => $"{ColorInfo.HSL.H}, {ColorInfo.HSL.S}, {ColorInfo.HSL.L}",
-				ColorTypes.HSV => $"{ColorInfo.HSV.H}, {ColorInfo.HSV.S}, {ColorInfo.HSV.V}",
-				ColorTypes.CMYK => $"{ColorInfo.CMYK.C}, {ColorInfo.CMYK.M}, {ColorInfo.CMYK.Y}, {ColorInfo.CMYK.K}",
-				ColorTypes.XYZ => $"{ColorInfo.XYZ.X}; {ColorInfo.XYZ.Y}; {ColorInfo.XYZ.Z}",
-				ColorTypes.YIQ => $"{ColorInfo.YIQ.Y}; {ColorInfo.YIQ.I}; {ColorInfo.YIQ.Q}",
-				ColorTypes.YUV => $"{ColorInfo.YUV.Y}; {ColorInfo.YUV.U}; {ColorInfo.YUV.V}",
-				_ => $"{ColorInfo.RGB.R}{Global.Settings.RgbSeparator}{ColorInfo.RGB.G}{Global.Settings.RgbSeparator}{ColorInfo.RGB.B}"
-			});
+			// 取色吸管复制时始终使用 HEX 格式（不随当前选择的颜色格式变化）
+			Clipboard.SetDataObject($"#{ColorInfo.HEX.Value}");
 
 			if (RecentColors.Contains(ColorInfo.HEX.ToString())) return;
 			RecentColors.Add(ColorInfo.HEX.ToString());

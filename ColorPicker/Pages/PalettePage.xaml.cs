@@ -49,8 +49,21 @@ public partial class PalettePage : Page
 		InitializeComponent();
 		InitUI();
 
+		// 离开页面时关闭详情 Popup，避免它悬浮在其他页面上
+		Unloaded += (o, e) => DetailsPopup.IsOpen = false;
+
 		Loaded += (o, e) => SynethiaManager.InjectSynethiaCode(this, Global.SynethiaConfig.PagesInfo, 4, ref code); // injects the code in the page
 
+	}
+
+	/// <summary>
+	/// 在鼠标位置显示颜色详情。Popup 的 StaysOpen=False 保证点击页面任意其它位置时自动关闭，
+	/// 因此同一时间只会存在一个详情面板（与色轮 Popup 行为一致）。
+	/// </summary>
+	internal void ShowDetailsPopup(Color color)
+	{
+		DetailsPopupContent.LoadColor(color);
+		DetailsPopup.IsOpen = true;
 	}
 	private void InitUI()
 	{
@@ -333,7 +346,7 @@ public partial class PalettePage : Page
 
 				border.MouseRightButtonUp += (o, e) =>
 				{
-					new ColorDetailsWindow(new SolidColorBrush { Color = Color.FromRgb(shades[j].R, shades[j].G, shades[j].B) }).Show();
+					ShowDetailsPopup(Color.FromRgb(shades[j].R, shades[j].G, shades[j].B));
 				};
 				if (k == 0) ShadesPanel.Children.Add(border);
 				else if (k == 1) BrightnessPanel.Children.Add(border);
@@ -608,7 +621,8 @@ public partial class PalettePage : Page
 
 	private void ComplementaryBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
-		new ColorDetailsWindow((SolidColorBrush)((Border)sender).Background).Show();
+		if (((Border)sender).Background is not SolidColorBrush brush) return;
+		ShowDetailsPopup(brush.Color);
 	}
 
 	private void AddRemoveBookmarkBtn_Click(object sender, RoutedEventArgs e)
