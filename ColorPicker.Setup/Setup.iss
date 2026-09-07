@@ -10,10 +10,10 @@
 
 #define MyAppName "ColorPicker Max"
 #ifndef MyAppVersion
-  #define MyAppVersion "1.2.0"
+  #define MyAppVersion "1.2.1"
 #endif
 #ifndef MyAppFullVersion
-  #define MyAppFullVersion "1.2.0"
+  #define MyAppFullVersion "1.2.1"
 #endif
 #define MyAppPublisher "luzwales"
 #define MyAppURL "https://github.com/luzwales/ColorPicker"
