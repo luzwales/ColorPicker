@@ -632,7 +632,7 @@ public partial class SettingsPage : Page
 
 	private void GitHubBtn_Click(object sender, RoutedEventArgs e)
 	{
-		Process.Start("explorer.exe", "https://github.com/Leo-Corporation/ColorPicker");
+		Process.Start("explorer.exe", "https://github.com/luzwales/ColorPicker");
 	}
 
 	private void LaunchOnStartChk_Checked(object sender, RoutedEventArgs e)

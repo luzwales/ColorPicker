@@ -137,7 +137,7 @@ public static class Global
 		}
 		catch { }
 	}
-	public static string LastVersionLink => "https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/ColorPicker/5.0/Version.txt";
+	public static string LastVersionLink => "https://raw.githubusercontent.com/luzwales/ColorPicker/main/Version.txt";
 
 	public static string Version => "1.0.1";
 

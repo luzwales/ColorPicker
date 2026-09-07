@@ -11,7 +11,7 @@
 	<Title>ColorPicker</Title>
 	<AssemblyName>ColorPickerMax</AssemblyName>
 	<Description>Maximize your creativity.</Description>
-	<RepositoryUrl>https://github.com/Leo-Corporation/ColorPicker</RepositoryUrl>
+	<RepositoryUrl>https://github.com/luzwales/ColorPicker</RepositoryUrl>
 	<Version>1.0.1</Version>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageIcon>logo.png</PackageIcon>

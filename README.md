@@ -34,23 +34,32 @@
 
 ### Color Selection and Management
 <picture>
-  <source srcset=".github/images/screens/1B.png" media="(prefers-color-scheme: dark)" />
-  <img src=".github/images/screens/1.png" alt="Selector page" />
+  <source srcset="img/1.png" media="(prefers-color-scheme: dark)" />
+  <img src="img/1.png" alt="Selector page" />
 </picture>
 
 (Full original feature list remains, showcasing pickers, formats, and real-time conversion.)
 
 ### Chromatic Wheel (色轮控件)
 <picture>
-    <img src=".github/images/screens/ColorWheel.png" alt="Color Wheel" />
+    <img src="img/ColorWheel.png" alt="Color Wheel" />
 </picture>
 
 Exploit an interactive wheel directly within the app, powered by PixiEditor.
 
 ### Text Tool & Accessibility
 ### Palette Generator
+<picture>
+    <img src="img/3.png" alt="Palette page" />
+</picture>
 ### Gradient Creator
+<picture>
+    <img src="img/4.png" alt="Gradient page" />
+</picture>
 ### AI Color Suggestions (自定义 AI 设定)
+<picture>
+    <img src="img/5.png" alt="AI Generation page" />
+</picture>
 Leverage AI for natural language color generation. Customize the prompt behavior in the new AI Settings panel.
 
 ### Bookmarks (书签)

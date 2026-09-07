@@ -1,0 +1,2187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bookmarks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ColorBookmarks>
+    <string>#6923fa</string>
+    <string>#1af9d7</string>
+    <string>#1b5f1b</string>
+    <string>#f9f4dc</string>
+    <string>#f7e8aa</string>
+    <string>#f8df72</string>
+    <string>#f8df70</string>
+    <string>#fbda41</string>
+    <string>#fed71a</string>
+    <string>#f7de98</string>
+    <string>#f8d86a</string>
+    <string>#fcd337</string>
+    <string>#fcd217</string>
+    <string>#ffd111</string>
+    <string>#f6dead</string>
+    <string>#f7da94</string>
+    <string>#f9d367</string>
+    <string>#fbcd31</string>
+    <string>#fccb16</string>
+    <string>#fecc11</string>
+    <string>#fbc82f</string>
+    <string>#fcc515</string>
+    <string>#fcc307</string>
+    <string>#f8c387</string>
+    <string>#f7c173</string>
+    <string>#fbb929</string>
+    <string>#fbb612</string>
+    <string>#fcb70a</string>
+    <string>#f9a633</string>
+    <string>#fba414</string>
+    <string>#fca106</string>
+    <string>#fca104</string>
+    <string>#fc8c23</string>
+    <string>#f28e16</string>
+    <string>#ff9900</string>
+    <string>#fb8b05</string>
+    <string>#e9ddb6</string>
+    <string>#eed045</string>
+    <string>#f2ce2b</string>
+    <string>#f1ca17</string>
+    <string>#ddc871</string>
+    <string>#dfc243</string>
+    <string>#e2c027</string>
+    <string>#e4bf11</string>
+    <string>#d2b42c</string>
+    <string>#d2b116</string>
+    <string>#b7ae8f</string>
+    <string>#ad9e5f</string>
+    <string>#8e804b</string>
+    <string>#887322</string>
+    <string>#867018</string>
+    <string>#685e48</string>
+    <string>#695e45</string>
+    <string>#645822</string>
+    <string>#5e5314</string>
+    <string>#f9f1db</string>
+    <string>#f8e8c1</string>
+    <string>#f9d770</string>
+    <string>#ffc90c</string>
+    <string>#f2e6ce</string>
+    <string>#f0d695</string>
+    <string>#f4ce69</string>
+    <string>#f6c430</string>
+    <string>#f9c116</string>
+    <string>#f9bd10</string>
+    <string>#e5d3aa</string>
+    <string>#e8b004</string>
+    <string>#ebb10d</string>
+    <string>#d9a40e</string>
+    <string>#b5aa90</string>
+    <string>#b6a476</string>
+    <string>#b78d12</string>
+    <string>#87723e</string>
+    <string>#876818</string>
+    <string>#8a6913</string>
+    <string>#4a4035</string>
+    <string>#4d4030</string>
+    <string>#584717</string>
+    <string>#5b4913</string>
+    <string>#f9e9cd</string>
+    <string>#f8e0b0</string>
+    <string>#f9d27d</string>
+    <string>#feba07</string>
+    <string>#f3bf4c</string>
+    <string>#f8bc31</string>
+    <string>#e2c17c</string>
+    <string>#e5b751</string>
+    <string>#eaad1a</string>
+    <string>#d6a01d</string>
+    <string>#b4a992</string>
+    <string>#b78b26</string>
+    <string>#826b48</string>
+    <string>#806332</string>
+    <string>#815f25</string>
+    <string>#835e1d</string>
+    <string>#4f4032</string>
+    <string>#503e2a</string>
+    <string>#513c20</string>
+    <string>#533c1b</string>
+    <string>#553b18</string>
+    <string>#fbf2e3</string>
+    <string>#f9e8d0</string>
+    <string>#f9cb8b</string>
+    <string>#fbb957</string>
+    <string>#ffa60f</string>
+    <string>#f4a83a</string>
+    <string>#e3bd8d</string>
+    <string>#e7a23f</string>
+    <string>#daa45a</string>
+    <string>#de9e44</string>
+    <string>#dc9123</string>
+    <string>#c09351</string>
+    <string>#97846c</string>
+    <string>#986524</string>
+    <string>#66462a</string>
+    <string>#5d3d21</string>
+    <string>#5c3719</string>
+    <string>#fbecde</string>
+    <string>#f8b37f</string>
+    <string>#f97d1c</string>
+    <string>#fa7e23</string>
+    <string>#f7cdbc</string>
+    <string>#f6cec1</string>
+    <string>#f0945d</string>
+    <string>#f0ada0</string>
+    <string>#eeaa9c</string>
+    <string>#eea08c</string>
+    <string>#ea8958</string>
+    <string>#f27635</string>
+    <string>#f86b1d</string>
+    <string>#ef6f48</string>
+    <string>#ef632b</string>
+    <string>#f1441d</string>
+    <string>#f04b22</string>
+    <string>#f2481b</string>
+    <string>#f34718</string>
+    <string>#f43e06</string>
+    <string>#ed5126</string>
+    <string>#f09c5a</string>
+    <string>#f26b1f</string>
+    <string>#d99156</string>
+    <string>#db8540</string>
+    <string>#de7622</string>
+    <string>#c1b2a3</string>
+    <string>#be7e4a</string>
+    <string>#c1651a</string>
+    <string>#918072</string>
+    <string>#9a8878</string>
+    <string>#945833</string>
+    <string>#964d22</string>
+    <string>#954416</string>
+    <string>#624941</string>
+    <string>#64483d</string>
+    <string>#71361d</string>
+    <string>#753117</string>
+    <string>#732e12</string>
+    <string>#fc6315</string>
+    <string>#e8b49a</string>
+    <string>#e46828</string>
+    <string>#d85916</string>
+    <string>#b7a091</string>
+    <string>#b7511d</string>
+    <string>#8b614d</string>
+    <string>#8c4b31</string>
+    <string>#873d24</string>
+    <string>#883a1e</string>
+    <string>#5b423a</string>
+    <string>#603d30</string>
+    <string>#673424</string>
+    <string>#652b1c</string>
+    <string>#692a1b</string>
+    <string>#fb9968</string>
+    <string>#fc7930</string>
+    <string>#edc3ae</string>
+    <string>#e16723</string>
+    <string>#d4c4b7</string>
+    <string>#cf7543</string>
+    <string>#cd6227</string>
+    <string>#aa6a4c</string>
+    <string>#a6522c</string>
+    <string>#773d31</string>
+    <string>#483332</string>
+    <string>#4b2e2b</string>
+    <string>#482522</string>
+    <string>#481e1c</string>
+    <string>#fbeee2</string>
+    <string>#f6dcce</string>
+    <string>#f7cfba</string>
+    <string>#f6ad8f</string>
+    <string>#f68c60</string>
+    <string>#f9723d</string>
+    <string>#fa5d19</string>
+    <string>#ee8055</string>
+    <string>#cf4813</string>
+    <string>#b89485</string>
+    <string>#b14b28</string>
+    <string>#863020</string>
+    <string>#862617</string>
+    <string>#592620</string>
+    <string>#5a1f1b</string>
+    <string>#5c1e19</string>
+    <string>#f4c7ba</string>
+    <string>#f17666</string>
+    <string>#f15642</string>
+    <string>#f5391c</string>
+    <string>#f25a47</string>
+    <string>#f33b1f</string>
+    <string>#f2b9b2</string>
+    <string>#f19790</string>
+    <string>#f05a46</string>
+    <string>#f23e23</string>
+    <string>#f2cac9</string>
+    <string>#efafad</string>
+    <string>#f1908c</string>
+    <string>#f03f24</string>
+    <string>#f0a1a8</string>
+    <string>#f1939c</string>
+    <string>#f07c82</string>
+    <string>#f04a3a</string>
+    <string>#f13c22</string>
+    <string>#e77c8e</string>
+    <string>#ed5a65</string>
+    <string>#ed4845</string>
+    <string>#ed3b2f</string>
+    <string>#ed3321</string>
+    <string>#ee4866</string>
+    <string>#ee4863</string>
+    <string>#ef475d</string>
+    <string>#ee3f4d</string>
+    <string>#ed3333</string>
+    <string>#ec2b24</string>
+    <string>#eb261a</string>
+    <string>#de2a18</string>
+    <string>#d42517</string>
+    <string>#ab372f</string>
+    <string>#ac1f18</string>
+    <string>#5d3131</string>
+    <string>#5c2223</string>
+    <string>#5a191b</string>
+    <string>#5a1216</string>
+    <string>#eea2a4</string>
+    <string>#ed556a</string>
+    <string>#f03752</string>
+    <string>#c04851</string>
+    <string>#c02c38</string>
+    <string>#a7535a</string>
+    <string>#7c1823</string>
+    <string>#4c1f24</string>
+    <string>#4d1018</string>
+    <string>#ee2746</string>
+    <string>#de1c31</string>
+    <string>#d11a2d</string>
+    <string>#c45a65</string>
+    <string>#c21f30</string>
+    <string>#a61b29</string>
+    <string>#894e54</string>
+    <string>#82202b</string>
+    <string>#82111f</string>
+    <string>#541e24</string>
+    <string>#500a16</string>
+    <string>#f8ebe6</string>
+    <string>#ec7696</string>
+    <string>#ef3473</string>
+    <string>#ea7293</string>
+    <string>#ec9bad</string>
+    <string>#eb507e</string>
+    <string>#ed2f6a</string>
+    <string>#eeb8c3</string>
+    <string>#ea517f</string>
+    <string>#f1c4cd</string>
+    <string>#ec8aa4</string>
+    <string>#ce5777</string>
+    <string>#ed9db2</string>
+    <string>#ef82a0</string>
+    <string>#eb3c70</string>
+    <string>#ec2c64</string>
+    <string>#e3b4b8</string>
+    <string>#cc163a</string>
+    <string>#c27c88</string>
+    <string>#bf3553</string>
+    <string>#73575c</string>
+    <string>#621624</string>
+    <string>#63071c</string>
+    <string>#36282b</string>
+    <string>#30161c</string>
+    <string>#2b1216</string>
+    <string>#2d0c13</string>
+    <string>#ce5e8a</string>
+    <string>#ec4e8a</string>
+    <string>#ee2c79</string>
+    <string>#951c48</string>
+    <string>#621d34</string>
+    <string>#62102e</string>
+    <string>#382129</string>
+    <string>#381924</string>
+    <string>#33141e</string>
+    <string>#310f1b</string>
+    <string>#eea6b7</string>
+    <string>#ef498b</string>
+    <string>#de7897</string>
+    <string>#de3f7c</string>
+    <string>#d13c74</string>
+    <string>#c5708b</string>
+    <string>#a8456b</string>
+    <string>#4b1e2f</string>
+    <string>#461629</string>
+    <string>#440e25</string>
+    <string>#f0c9cf</string>
+    <string>#eba0b3</string>
+    <string>#ec2d7a</string>
+    <string>#e16c96</string>
+    <string>#ede3e7</string>
+    <string>#e9d7df</string>
+    <string>#d2568c</string>
+    <string>#d2357d</string>
+    <string>#d1c2d3</string>
+    <string>#c8adc4</string>
+    <string>#c08eaf</string>
+    <string>#ba2f7b</string>
+    <string>#8076a3</string>
+    <string>#806d9e</string>
+    <string>#815c94</string>
+    <string>#813c85</string>
+    <string>#7e1671</string>
+    <string>#e9ccd3</string>
+    <string>#d276a3</string>
+    <string>#cc5595</string>
+    <string>#e6d2d5</string>
+    <string>#c35691</string>
+    <string>#c06f98</string>
+    <string>#bdaead</string>
+    <string>#b598a1</string>
+    <string>#9b1e64</string>
+    <string>#856d72</string>
+    <string>#4f383e</string>
+    <string>#482936</string>
+    <string>#f2e7e5</string>
+    <string>#e0c8d1</string>
+    <string>#bc84a8</string>
+    <string>#ad6598</string>
+    <string>#a35c8f</string>
+    <string>#983680</string>
+    <string>#8b2671</string>
+    <string>#894276</string>
+    <string>#7e2065</string>
+    <string>#681752</string>
+    <string>#5d3f51</string>
+    <string>#4e2a40</string>
+    <string>#411c35</string>
+    <string>#36292f</string>
+    <string>#1e131d</string>
+    <string>#1c0d1a</string>
+    <string>#f1f0ed</string>
+    <string>#e2e1e4</string>
+    <string>#ccccd6</string>
+    <string>#a7a8bd</string>
+    <string>#61649f</string>
+    <string>#74759b</string>
+    <string>#cfccc9</string>
+    <string>#525288</string>
+    <string>#2e317c</string>
+    <string>#7a7374</string>
+    <string>#302f4b</string>
+    <string>#3e3841</string>
+    <string>#322f3b</string>
+    <string>#22202e</string>
+    <string>#1f2040</string>
+    <string>#131124</string>
+    <string>#2775b6</string>
+    <string>#2474b5</string>
+    <string>#d0dfe6</string>
+    <string>#93b5cf</string>
+    <string>#619ac3</string>
+    <string>#2376b7</string>
+    <string>#5698c3</string>
+    <string>#2177b8</string>
+    <string>#b0d5df</string>
+    <string>#8abcd1</string>
+    <string>#66a9c9</string>
+    <string>#2983bb</string>
+    <string>#1772b4</string>
+    <string>#63bbd0</string>
+    <string>#5cb3cc</string>
+    <string>#2486b9</string>
+    <string>#1677b3</string>
+    <string>#126bae</string>
+    <string>#22a2c3</string>
+    <string>#1a94bc</string>
+    <string>#158bb8</string>
+    <string>#1177b0</string>
+    <string>#0f59a4</string>
+    <string>#2b73af</string>
+    <string>#cdd1d3</string>
+    <string>#3170a7</string>
+    <string>#5e616d</string>
+    <string>#475164</string>
+    <string>#fffefa</string>
+    <string>#35333c</string>
+    <string>#0f1423</string>
+    <string>#baccd9</string>
+    <string>#8fb2c9</string>
+    <string>#1661ab</string>
+    <string>#c4cbcf</string>
+    <string>#15559a</string>
+    <string>#4e7ca1</string>
+    <string>#346c9c</string>
+    <string>#2f2f35</string>
+    <string>#2d2e36</string>
+    <string>#131824</string>
+    <string>#d8e3e7</string>
+    <string>#c3d7df</string>
+    <string>#2f90b9</string>
+    <string>#1781b5</string>
+    <string>#c7d2d4</string>
+    <string>#11659a</string>
+    <string>#c0c4c3</string>
+    <string>#b2bbbe</string>
+    <string>#5e7987</string>
+    <string>#144a74</string>
+    <string>#74787a</string>
+    <string>#495c69</string>
+    <string>#47484c</string>
+    <string>#2b333e</string>
+    <string>#1c2938</string>
+    <string>#142334</string>
+    <string>#101f30</string>
+    <string>#eef7f2</string>
+    <string>#c6e6e8</string>
+    <string>#93d5dc</string>
+    <string>#51c4d3</string>
+    <string>#29b7cb</string>
+    <string>#0eb0c9</string>
+    <string>#10aec2</string>
+    <string>#57c3c2</string>
+    <string>#b9dec9</string>
+    <string>#83cbac</string>
+    <string>#12aa9c</string>
+    <string>#66c18c</string>
+    <string>#5dbe8a</string>
+    <string>#55bb8a</string>
+    <string>#45b787</string>
+    <string>#2bae85</string>
+    <string>#1ba784</string>
+    <string>#12a182</string>
+    <string>#c4d7d6</string>
+    <string>#1e9eb3</string>
+    <string>#0f95b0</string>
+    <string>#1491a8</string>
+    <string>#7cabb1</string>
+    <string>#a4aca7</string>
+    <string>#869d9d</string>
+    <string>#648e93</string>
+    <string>#3b818c</string>
+    <string>#126e82</string>
+    <string>#737c7b</string>
+    <string>#617172</string>
+    <string>#134857</string>
+    <string>#474b4c</string>
+    <string>#21373d</string>
+    <string>#132c33</string>
+    <string>#a4cab6</string>
+    <string>#2c9678</string>
+    <string>#9abeaf</string>
+    <string>#69a794</string>
+    <string>#92b3a5</string>
+    <string>#248067</string>
+    <string>#428675</string>
+    <string>#9fa39a</string>
+    <string>#8a988e</string>
+    <string>#70887d</string>
+    <string>#497568</string>
+    <string>#5d655f</string>
+    <string>#314a43</string>
+    <string>#223e36</string>
+    <string>#1a3b32</string>
+    <string>#363433</string>
+    <string>#1f2623</string>
+    <string>#141e1b</string>
+    <string>#c6dfc8</string>
+    <string>#9eccab</string>
+    <string>#68b88e</string>
+    <string>#20a162</string>
+    <string>#61ac85</string>
+    <string>#40a070</string>
+    <string>#229453</string>
+    <string>#cad3c3</string>
+    <string>#3c9566</string>
+    <string>#20894d</string>
+    <string>#83a78d</string>
+    <string>#579572</string>
+    <string>#207f4c</string>
+    <string>#6e8b74</string>
+    <string>#1a6840</string>
+    <string>#5e665b</string>
+    <string>#485b4d</string>
+    <string>#393733</string>
+    <string>#373834</string>
+    <string>#2b312c</string>
+    <string>#15231b</string>
+    <string>#f0f5e5</string>
+    <string>#dfecd5</string>
+    <string>#add5a2</string>
+    <string>#41b349</string>
+    <string>#43b244</string>
+    <string>#41ae3c</string>
+    <string>#e2e7bf</string>
+    <string>#d0deaa</string>
+    <string>#b2cf87</string>
+    <string>#8cc269</string>
+    <string>#b7d07a</string>
+    <string>#d2d97a</string>
+    <string>#bacf65</string>
+    <string>#96c24e</string>
+    <string>#e2d849</string>
+    <string>#bec936</string>
+    <string>#5bae23</string>
+    <string>#253d24</string>
+    <string>#fffef8</string>
+    <string>#f8f4ed</string>
+    <string>#fffef9</string>
+    <string>#f7f4ed</string>
+    <string>#e4dfd7</string>
+    <string>#dad4cb</string>
+    <string>#bbb5ac</string>
+    <string>#a49c93</string>
+    <string>#867e76</string>
+    <string>#847c74</string>
+    <string>#80766e</string>
+    <string>#81776e</string>
+  </ColorBookmarks>
+  <ColorBookmarksNotes>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </ColorBookmarksNotes>
+  <PaletteBookmarks>
+    <string>A04118</string>
+    <string>#f9f4dc</string>
+    <string>#f7e8aa</string>
+    <string>#f8df72</string>
+    <string>#f8df70</string>
+    <string>#fbda41</string>
+    <string>#fed71a</string>
+    <string>#f7de98</string>
+    <string>#f8d86a</string>
+    <string>#fcd337</string>
+    <string>#fcd217</string>
+    <string>#ffd111</string>
+    <string>#f6dead</string>
+    <string>#f7da94</string>
+    <string>#f9d367</string>
+    <string>#fbcd31</string>
+    <string>#fccb16</string>
+    <string>#fecc11</string>
+    <string>#fbc82f</string>
+    <string>#fcc515</string>
+    <string>#fcc307</string>
+    <string>#f8c387</string>
+    <string>#f7c173</string>
+    <string>#fbb929</string>
+    <string>#fbb612</string>
+    <string>#fcb70a</string>
+    <string>#f9a633</string>
+    <string>#fba414</string>
+    <string>#fca106</string>
+    <string>#fca104</string>
+    <string>#fc8c23</string>
+    <string>#f28e16</string>
+    <string>#ff9900</string>
+    <string>#fb8b05</string>
+    <string>#e9ddb6</string>
+    <string>#eed045</string>
+    <string>#f2ce2b</string>
+    <string>#f1ca17</string>
+    <string>#ddc871</string>
+    <string>#dfc243</string>
+    <string>#e2c027</string>
+    <string>#e4bf11</string>
+    <string>#d2b42c</string>
+    <string>#d2b116</string>
+    <string>#b7ae8f</string>
+    <string>#ad9e5f</string>
+    <string>#8e804b</string>
+    <string>#887322</string>
+    <string>#867018</string>
+    <string>#685e48</string>
+    <string>#695e45</string>
+    <string>#645822</string>
+    <string>#5e5314</string>
+    <string>#f9f1db</string>
+    <string>#f8e8c1</string>
+    <string>#f9d770</string>
+    <string>#ffc90c</string>
+    <string>#f2e6ce</string>
+    <string>#f0d695</string>
+    <string>#f4ce69</string>
+    <string>#f6c430</string>
+    <string>#f9c116</string>
+    <string>#f9bd10</string>
+    <string>#e5d3aa</string>
+    <string>#e8b004</string>
+    <string>#ebb10d</string>
+    <string>#d9a40e</string>
+    <string>#b5aa90</string>
+    <string>#b6a476</string>
+    <string>#b78d12</string>
+    <string>#87723e</string>
+    <string>#876818</string>
+    <string>#8a6913</string>
+    <string>#4a4035</string>
+    <string>#4d4030</string>
+    <string>#584717</string>
+    <string>#5b4913</string>
+    <string>#f9e9cd</string>
+    <string>#f8e0b0</string>
+    <string>#f9d27d</string>
+    <string>#feba07</string>
+    <string>#f3bf4c</string>
+    <string>#f8bc31</string>
+    <string>#e2c17c</string>
+    <string>#e5b751</string>
+    <string>#eaad1a</string>
+    <string>#d6a01d</string>
+    <string>#b4a992</string>
+    <string>#b78b26</string>
+    <string>#826b48</string>
+    <string>#806332</string>
+    <string>#815f25</string>
+    <string>#835e1d</string>
+    <string>#4f4032</string>
+    <string>#503e2a</string>
+    <string>#513c20</string>
+    <string>#533c1b</string>
+    <string>#553b18</string>
+    <string>#fbf2e3</string>
+    <string>#f9e8d0</string>
+    <string>#f9cb8b</string>
+    <string>#fbb957</string>
+    <string>#ffa60f</string>
+    <string>#f4a83a</string>
+    <string>#e3bd8d</string>
+    <string>#e7a23f</string>
+    <string>#daa45a</string>
+    <string>#de9e44</string>
+    <string>#dc9123</string>
+    <string>#c09351</string>
+    <string>#97846c</string>
+    <string>#986524</string>
+    <string>#66462a</string>
+    <string>#5d3d21</string>
+    <string>#5c3719</string>
+    <string>#fbecde</string>
+    <string>#f8b37f</string>
+    <string>#f97d1c</string>
+    <string>#fa7e23</string>
+    <string>#f7cdbc</string>
+    <string>#f6cec1</string>
+    <string>#f0945d</string>
+    <string>#f0ada0</string>
+    <string>#eeaa9c</string>
+    <string>#eea08c</string>
+    <string>#ea8958</string>
+    <string>#f27635</string>
+    <string>#f86b1d</string>
+    <string>#ef6f48</string>
+    <string>#ef632b</string>
+    <string>#f1441d</string>
+    <string>#f04b22</string>
+    <string>#f2481b</string>
+    <string>#f34718</string>
+    <string>#f43e06</string>
+    <string>#ed5126</string>
+    <string>#f09c5a</string>
+    <string>#f26b1f</string>
+    <string>#d99156</string>
+    <string>#db8540</string>
+    <string>#de7622</string>
+    <string>#c1b2a3</string>
+    <string>#be7e4a</string>
+    <string>#c1651a</string>
+    <string>#918072</string>
+    <string>#9a8878</string>
+    <string>#945833</string>
+    <string>#964d22</string>
+    <string>#954416</string>
+    <string>#624941</string>
+    <string>#64483d</string>
+    <string>#71361d</string>
+    <string>#753117</string>
+    <string>#732e12</string>
+    <string>#fc6315</string>
+    <string>#e8b49a</string>
+    <string>#e46828</string>
+    <string>#d85916</string>
+    <string>#b7a091</string>
+    <string>#b7511d</string>
+    <string>#8b614d</string>
+    <string>#8c4b31</string>
+    <string>#873d24</string>
+    <string>#883a1e</string>
+    <string>#5b423a</string>
+    <string>#603d30</string>
+    <string>#673424</string>
+    <string>#652b1c</string>
+    <string>#692a1b</string>
+    <string>#fb9968</string>
+    <string>#fc7930</string>
+    <string>#edc3ae</string>
+    <string>#e16723</string>
+    <string>#d4c4b7</string>
+    <string>#cf7543</string>
+    <string>#cd6227</string>
+    <string>#aa6a4c</string>
+    <string>#a6522c</string>
+    <string>#773d31</string>
+    <string>#483332</string>
+    <string>#4b2e2b</string>
+    <string>#482522</string>
+    <string>#481e1c</string>
+    <string>#fbeee2</string>
+    <string>#f6dcce</string>
+    <string>#f7cfba</string>
+    <string>#f6ad8f</string>
+    <string>#f68c60</string>
+    <string>#f9723d</string>
+    <string>#fa5d19</string>
+    <string>#ee8055</string>
+    <string>#cf4813</string>
+    <string>#b89485</string>
+    <string>#b14b28</string>
+    <string>#863020</string>
+    <string>#862617</string>
+    <string>#592620</string>
+    <string>#5a1f1b</string>
+    <string>#5c1e19</string>
+    <string>#f4c7ba</string>
+    <string>#f17666</string>
+    <string>#f15642</string>
+    <string>#f5391c</string>
+    <string>#f25a47</string>
+    <string>#f33b1f</string>
+    <string>#f2b9b2</string>
+    <string>#f19790</string>
+    <string>#f05a46</string>
+    <string>#f23e23</string>
+    <string>#f2cac9</string>
+    <string>#efafad</string>
+    <string>#f1908c</string>
+    <string>#f03f24</string>
+    <string>#f0a1a8</string>
+    <string>#f1939c</string>
+    <string>#f07c82</string>
+    <string>#f04a3a</string>
+    <string>#f13c22</string>
+    <string>#e77c8e</string>
+    <string>#ed5a65</string>
+    <string>#ed4845</string>
+    <string>#ed3b2f</string>
+    <string>#ed3321</string>
+    <string>#ee4866</string>
+    <string>#ee4863</string>
+    <string>#ef475d</string>
+    <string>#ee3f4d</string>
+    <string>#ed3333</string>
+    <string>#ec2b24</string>
+    <string>#eb261a</string>
+    <string>#de2a18</string>
+    <string>#d42517</string>
+    <string>#ab372f</string>
+    <string>#ac1f18</string>
+    <string>#5d3131</string>
+    <string>#5c2223</string>
+    <string>#5a191b</string>
+    <string>#5a1216</string>
+    <string>#eea2a4</string>
+    <string>#ed556a</string>
+    <string>#f03752</string>
+    <string>#c04851</string>
+    <string>#c02c38</string>
+    <string>#a7535a</string>
+    <string>#7c1823</string>
+    <string>#4c1f24</string>
+    <string>#4d1018</string>
+    <string>#ee2746</string>
+    <string>#de1c31</string>
+    <string>#d11a2d</string>
+    <string>#c45a65</string>
+    <string>#c21f30</string>
+    <string>#a61b29</string>
+    <string>#894e54</string>
+    <string>#82202b</string>
+    <string>#82111f</string>
+    <string>#541e24</string>
+    <string>#500a16</string>
+    <string>#f8ebe6</string>
+    <string>#ec7696</string>
+    <string>#ef3473</string>
+    <string>#ea7293</string>
+    <string>#ec9bad</string>
+    <string>#eb507e</string>
+    <string>#ed2f6a</string>
+    <string>#eeb8c3</string>
+    <string>#ea517f</string>
+    <string>#f1c4cd</string>
+    <string>#ec8aa4</string>
+    <string>#ce5777</string>
+    <string>#ed9db2</string>
+    <string>#ef82a0</string>
+    <string>#eb3c70</string>
+    <string>#ec2c64</string>
+    <string>#e3b4b8</string>
+    <string>#cc163a</string>
+    <string>#c27c88</string>
+    <string>#bf3553</string>
+    <string>#73575c</string>
+    <string>#621624</string>
+    <string>#63071c</string>
+    <string>#36282b</string>
+    <string>#30161c</string>
+    <string>#2b1216</string>
+    <string>#2d0c13</string>
+    <string>#ce5e8a</string>
+    <string>#ec4e8a</string>
+    <string>#ee2c79</string>
+    <string>#951c48</string>
+    <string>#621d34</string>
+    <string>#62102e</string>
+    <string>#382129</string>
+    <string>#381924</string>
+    <string>#33141e</string>
+    <string>#310f1b</string>
+    <string>#eea6b7</string>
+    <string>#ef498b</string>
+    <string>#de7897</string>
+    <string>#de3f7c</string>
+    <string>#d13c74</string>
+    <string>#c5708b</string>
+    <string>#a8456b</string>
+    <string>#4b1e2f</string>
+    <string>#461629</string>
+    <string>#440e25</string>
+    <string>#f0c9cf</string>
+    <string>#eba0b3</string>
+    <string>#ec2d7a</string>
+    <string>#e16c96</string>
+    <string>#ede3e7</string>
+    <string>#e9d7df</string>
+    <string>#d2568c</string>
+    <string>#d2357d</string>
+    <string>#d1c2d3</string>
+    <string>#c8adc4</string>
+    <string>#c08eaf</string>
+    <string>#ba2f7b</string>
+    <string>#8076a3</string>
+    <string>#806d9e</string>
+    <string>#815c94</string>
+    <string>#813c85</string>
+    <string>#7e1671</string>
+    <string>#e9ccd3</string>
+    <string>#d276a3</string>
+    <string>#cc5595</string>
+    <string>#e6d2d5</string>
+    <string>#c35691</string>
+    <string>#c06f98</string>
+    <string>#bdaead</string>
+    <string>#b598a1</string>
+    <string>#9b1e64</string>
+    <string>#856d72</string>
+    <string>#4f383e</string>
+    <string>#482936</string>
+    <string>#f2e7e5</string>
+    <string>#e0c8d1</string>
+    <string>#bc84a8</string>
+    <string>#ad6598</string>
+    <string>#a35c8f</string>
+    <string>#983680</string>
+    <string>#8b2671</string>
+    <string>#894276</string>
+    <string>#7e2065</string>
+    <string>#681752</string>
+    <string>#5d3f51</string>
+    <string>#4e2a40</string>
+    <string>#411c35</string>
+    <string>#36292f</string>
+    <string>#1e131d</string>
+    <string>#1c0d1a</string>
+    <string>#f1f0ed</string>
+    <string>#e2e1e4</string>
+    <string>#ccccd6</string>
+    <string>#a7a8bd</string>
+    <string>#61649f</string>
+    <string>#74759b</string>
+    <string>#cfccc9</string>
+    <string>#525288</string>
+    <string>#2e317c</string>
+    <string>#7a7374</string>
+    <string>#302f4b</string>
+    <string>#3e3841</string>
+    <string>#322f3b</string>
+    <string>#22202e</string>
+    <string>#1f2040</string>
+    <string>#131124</string>
+    <string>#2775b6</string>
+    <string>#2474b5</string>
+    <string>#d0dfe6</string>
+    <string>#93b5cf</string>
+    <string>#619ac3</string>
+    <string>#2376b7</string>
+    <string>#5698c3</string>
+    <string>#2177b8</string>
+    <string>#b0d5df</string>
+    <string>#8abcd1</string>
+    <string>#66a9c9</string>
+    <string>#2983bb</string>
+    <string>#1772b4</string>
+    <string>#63bbd0</string>
+    <string>#5cb3cc</string>
+    <string>#2486b9</string>
+    <string>#1677b3</string>
+    <string>#126bae</string>
+    <string>#22a2c3</string>
+    <string>#1a94bc</string>
+    <string>#158bb8</string>
+    <string>#1177b0</string>
+    <string>#0f59a4</string>
+    <string>#2b73af</string>
+    <string>#cdd1d3</string>
+    <string>#3170a7</string>
+    <string>#5e616d</string>
+    <string>#475164</string>
+    <string>#fffefa</string>
+    <string>#35333c</string>
+    <string>#0f1423</string>
+    <string>#baccd9</string>
+    <string>#8fb2c9</string>
+    <string>#1661ab</string>
+    <string>#c4cbcf</string>
+    <string>#15559a</string>
+    <string>#4e7ca1</string>
+    <string>#346c9c</string>
+    <string>#2f2f35</string>
+    <string>#2d2e36</string>
+    <string>#131824</string>
+    <string>#d8e3e7</string>
+    <string>#c3d7df</string>
+    <string>#2f90b9</string>
+    <string>#1781b5</string>
+    <string>#c7d2d4</string>
+    <string>#11659a</string>
+    <string>#c0c4c3</string>
+    <string>#b2bbbe</string>
+    <string>#5e7987</string>
+    <string>#144a74</string>
+    <string>#74787a</string>
+    <string>#495c69</string>
+    <string>#47484c</string>
+    <string>#2b333e</string>
+    <string>#1c2938</string>
+    <string>#142334</string>
+    <string>#101f30</string>
+    <string>#eef7f2</string>
+    <string>#c6e6e8</string>
+    <string>#93d5dc</string>
+    <string>#51c4d3</string>
+    <string>#29b7cb</string>
+    <string>#0eb0c9</string>
+    <string>#10aec2</string>
+    <string>#57c3c2</string>
+    <string>#b9dec9</string>
+    <string>#83cbac</string>
+    <string>#12aa9c</string>
+    <string>#66c18c</string>
+    <string>#5dbe8a</string>
+    <string>#55bb8a</string>
+    <string>#45b787</string>
+    <string>#2bae85</string>
+    <string>#1ba784</string>
+    <string>#12a182</string>
+    <string>#c4d7d6</string>
+    <string>#1e9eb3</string>
+    <string>#0f95b0</string>
+    <string>#1491a8</string>
+    <string>#7cabb1</string>
+    <string>#a4aca7</string>
+    <string>#869d9d</string>
+    <string>#648e93</string>
+    <string>#3b818c</string>
+    <string>#126e82</string>
+    <string>#737c7b</string>
+    <string>#617172</string>
+    <string>#134857</string>
+    <string>#474b4c</string>
+    <string>#21373d</string>
+    <string>#132c33</string>
+    <string>#a4cab6</string>
+    <string>#2c9678</string>
+    <string>#9abeaf</string>
+    <string>#69a794</string>
+    <string>#92b3a5</string>
+    <string>#248067</string>
+    <string>#428675</string>
+    <string>#9fa39a</string>
+    <string>#8a988e</string>
+    <string>#70887d</string>
+    <string>#497568</string>
+    <string>#5d655f</string>
+    <string>#314a43</string>
+    <string>#223e36</string>
+    <string>#1a3b32</string>
+    <string>#363433</string>
+    <string>#1f2623</string>
+    <string>#141e1b</string>
+    <string>#c6dfc8</string>
+    <string>#9eccab</string>
+    <string>#68b88e</string>
+    <string>#20a162</string>
+    <string>#61ac85</string>
+    <string>#40a070</string>
+    <string>#229453</string>
+    <string>#cad3c3</string>
+    <string>#3c9566</string>
+    <string>#20894d</string>
+    <string>#83a78d</string>
+    <string>#579572</string>
+    <string>#207f4c</string>
+    <string>#6e8b74</string>
+    <string>#1a6840</string>
+    <string>#5e665b</string>
+    <string>#485b4d</string>
+    <string>#393733</string>
+    <string>#373834</string>
+    <string>#2b312c</string>
+    <string>#15231b</string>
+    <string>#f0f5e5</string>
+    <string>#dfecd5</string>
+    <string>#add5a2</string>
+    <string>#41b349</string>
+    <string>#43b244</string>
+    <string>#41ae3c</string>
+    <string>#e2e7bf</string>
+    <string>#d0deaa</string>
+    <string>#b2cf87</string>
+    <string>#8cc269</string>
+    <string>#b7d07a</string>
+    <string>#d2d97a</string>
+    <string>#bacf65</string>
+    <string>#96c24e</string>
+    <string>#e2d849</string>
+    <string>#bec936</string>
+    <string>#5bae23</string>
+    <string>#253d24</string>
+    <string>#fffef8</string>
+    <string>#f8f4ed</string>
+    <string>#fffef9</string>
+    <string>#f7f4ed</string>
+    <string>#e4dfd7</string>
+    <string>#dad4cb</string>
+    <string>#bbb5ac</string>
+    <string>#a49c93</string>
+    <string>#867e76</string>
+    <string>#847c74</string>
+    <string>#80766e</string>
+    <string>#81776e</string>
+  </PaletteBookmarks>
+  <GradientBookmarks>
+    <Gradient>
+      <Stops>
+        <BookmarkGradientStop>
+          <Color>A79D1A</Color>
+          <Stop>0</Stop>
+        </BookmarkGradientStop>
+        <BookmarkGradientStop>
+          <Color>4E4C97</Color>
+          <Stop>1</Stop>
+        </BookmarkGradientStop>
+      </Stops>
+      <Angle>135</Angle>
+    </Gradient>
+    <Gradient>
+      <Stops>
+        <BookmarkGradientStop>
+          <Color>565BFD</Color>
+          <Stop>0</Stop>
+        </BookmarkGradientStop>
+        <BookmarkGradientStop>
+          <Color>E2AD14</Color>
+          <Stop>1</Stop>
+        </BookmarkGradientStop>
+      </Stops>
+      <Angle>145</Angle>
+    </Gradient>
+    <Gradient>
+      <Stops>
+        <BookmarkGradientStop>
+          <Color>B3A7F6</Color>
+          <Stop>0</Stop>
+        </BookmarkGradientStop>
+        <BookmarkGradientStop>
+          <Color>471681</Color>
+          <Stop>1</Stop>
+        </BookmarkGradientStop>
+      </Stops>
+      <Angle>145</Angle>
+    </Gradient>
+  </GradientBookmarks>
+  <TextBookmarks>
+    <BookmarkText>
+      <FontFamily>Arial</FontFamily>
+      <ForegroundColor>C76B63</ForegroundColor>
+      <BackgroundColor>0458A6</BackgroundColor>
+    </BookmarkText>
+  </TextBookmarks>
+  <ColorCollections>
+    <ColorCollection>
+      <Name>ab</Name>
+      <Colors>
+        <string>a0a422</string>
+      </Colors>
+    </ColorCollection>
+    <ColorCollection>
+      <Name>green</Name>
+      <Colors>
+        <string>1af9d7</string>
+      </Colors>
+    </ColorCollection>
+      <ColorCollection>
+      <Name>中国色</Name>
+      <Colors>
+        <string>#f9f4dc</string>
+        <string>#f7e8aa</string>
+        <string>#f8df72</string>
+        <string>#f8df70</string>
+        <string>#fbda41</string>
+        <string>#fed71a</string>
+        <string>#f7de98</string>
+        <string>#f8d86a</string>
+        <string>#fcd337</string>
+        <string>#fcd217</string>
+        <string>#ffd111</string>
+        <string>#f6dead</string>
+        <string>#f7da94</string>
+        <string>#f9d367</string>
+        <string>#fbcd31</string>
+        <string>#fccb16</string>
+        <string>#fecc11</string>
+        <string>#fbc82f</string>
+        <string>#fcc515</string>
+        <string>#fcc307</string>
+        <string>#f8c387</string>
+        <string>#f7c173</string>
+        <string>#fbb929</string>
+        <string>#fbb612</string>
+        <string>#fcb70a</string>
+        <string>#f9a633</string>
+        <string>#fba414</string>
+        <string>#fca106</string>
+        <string>#fca104</string>
+        <string>#fc8c23</string>
+        <string>#f28e16</string>
+        <string>#ff9900</string>
+        <string>#fb8b05</string>
+        <string>#e9ddb6</string>
+        <string>#eed045</string>
+        <string>#f2ce2b</string>
+        <string>#f1ca17</string>
+        <string>#ddc871</string>
+        <string>#dfc243</string>
+        <string>#e2c027</string>
+        <string>#e4bf11</string>
+        <string>#d2b42c</string>
+        <string>#d2b116</string>
+        <string>#b7ae8f</string>
+        <string>#ad9e5f</string>
+        <string>#8e804b</string>
+        <string>#887322</string>
+        <string>#867018</string>
+        <string>#685e48</string>
+        <string>#695e45</string>
+        <string>#645822</string>
+        <string>#5e5314</string>
+        <string>#f9f1db</string>
+        <string>#f8e8c1</string>
+        <string>#f9d770</string>
+        <string>#ffc90c</string>
+        <string>#f2e6ce</string>
+        <string>#f0d695</string>
+        <string>#f4ce69</string>
+        <string>#f6c430</string>
+        <string>#f9c116</string>
+        <string>#f9bd10</string>
+        <string>#e5d3aa</string>
+        <string>#e8b004</string>
+        <string>#ebb10d</string>
+        <string>#d9a40e</string>
+        <string>#b5aa90</string>
+        <string>#b6a476</string>
+        <string>#b78d12</string>
+        <string>#87723e</string>
+        <string>#876818</string>
+        <string>#8a6913</string>
+        <string>#4a4035</string>
+        <string>#4d4030</string>
+        <string>#584717</string>
+        <string>#5b4913</string>
+        <string>#f9e9cd</string>
+        <string>#f8e0b0</string>
+        <string>#f9d27d</string>
+        <string>#feba07</string>
+        <string>#f3bf4c</string>
+        <string>#f8bc31</string>
+        <string>#e2c17c</string>
+        <string>#e5b751</string>
+        <string>#eaad1a</string>
+        <string>#d6a01d</string>
+        <string>#b4a992</string>
+        <string>#b78b26</string>
+        <string>#826b48</string>
+        <string>#806332</string>
+        <string>#815f25</string>
+        <string>#835e1d</string>
+        <string>#4f4032</string>
+        <string>#503e2a</string>
+        <string>#513c20</string>
+        <string>#533c1b</string>
+        <string>#553b18</string>
+        <string>#fbf2e3</string>
+        <string>#f9e8d0</string>
+        <string>#f9cb8b</string>
+        <string>#fbb957</string>
+        <string>#ffa60f</string>
+        <string>#f4a83a</string>
+        <string>#e3bd8d</string>
+        <string>#e7a23f</string>
+        <string>#daa45a</string>
+        <string>#de9e44</string>
+        <string>#dc9123</string>
+        <string>#c09351</string>
+        <string>#97846c</string>
+        <string>#986524</string>
+        <string>#66462a</string>
+        <string>#5d3d21</string>
+        <string>#5c3719</string>
+        <string>#fbecde</string>
+        <string>#f8b37f</string>
+        <string>#f97d1c</string>
+        <string>#fa7e23</string>
+        <string>#f7cdbc</string>
+        <string>#f6cec1</string>
+        <string>#f0945d</string>
+        <string>#f0ada0</string>
+        <string>#eeaa9c</string>
+        <string>#eea08c</string>
+        <string>#ea8958</string>
+        <string>#f27635</string>
+        <string>#f86b1d</string>
+        <string>#ef6f48</string>
+        <string>#ef632b</string>
+        <string>#f1441d</string>
+        <string>#f04b22</string>
+        <string>#f2481b</string>
+        <string>#f34718</string>
+        <string>#f43e06</string>
+        <string>#ed5126</string>
+        <string>#f09c5a</string>
+        <string>#f26b1f</string>
+        <string>#d99156</string>
+        <string>#db8540</string>
+        <string>#de7622</string>
+        <string>#c1b2a3</string>
+        <string>#be7e4a</string>
+        <string>#c1651a</string>
+        <string>#918072</string>
+        <string>#9a8878</string>
+        <string>#945833</string>
+        <string>#964d22</string>
+        <string>#954416</string>
+        <string>#624941</string>
+        <string>#64483d</string>
+        <string>#71361d</string>
+        <string>#753117</string>
+        <string>#732e12</string>
+        <string>#fc6315</string>
+        <string>#e8b49a</string>
+        <string>#e46828</string>
+        <string>#d85916</string>
+        <string>#b7a091</string>
+        <string>#b7511d</string>
+        <string>#8b614d</string>
+        <string>#8c4b31</string>
+        <string>#873d24</string>
+        <string>#883a1e</string>
+        <string>#5b423a</string>
+        <string>#603d30</string>
+        <string>#673424</string>
+        <string>#652b1c</string>
+        <string>#692a1b</string>
+        <string>#fb9968</string>
+        <string>#fc7930</string>
+        <string>#edc3ae</string>
+        <string>#e16723</string>
+        <string>#d4c4b7</string>
+        <string>#cf7543</string>
+        <string>#cd6227</string>
+        <string>#aa6a4c</string>
+        <string>#a6522c</string>
+        <string>#773d31</string>
+        <string>#483332</string>
+        <string>#4b2e2b</string>
+        <string>#482522</string>
+        <string>#481e1c</string>
+        <string>#fbeee2</string>
+        <string>#f6dcce</string>
+        <string>#f7cfba</string>
+        <string>#f6ad8f</string>
+        <string>#f68c60</string>
+        <string>#f9723d</string>
+        <string>#fa5d19</string>
+        <string>#ee8055</string>
+        <string>#cf4813</string>
+        <string>#b89485</string>
+        <string>#b14b28</string>
+        <string>#863020</string>
+        <string>#862617</string>
+        <string>#592620</string>
+        <string>#5a1f1b</string>
+        <string>#5c1e19</string>
+        <string>#f4c7ba</string>
+        <string>#f17666</string>
+        <string>#f15642</string>
+        <string>#f5391c</string>
+        <string>#f25a47</string>
+        <string>#f33b1f</string>
+        <string>#f2b9b2</string>
+        <string>#f19790</string>
+        <string>#f05a46</string>
+        <string>#f23e23</string>
+        <string>#f2cac9</string>
+        <string>#efafad</string>
+        <string>#f1908c</string>
+        <string>#f03f24</string>
+        <string>#f0a1a8</string>
+        <string>#f1939c</string>
+        <string>#f07c82</string>
+        <string>#f04a3a</string>
+        <string>#f13c22</string>
+        <string>#e77c8e</string>
+        <string>#ed5a65</string>
+        <string>#ed4845</string>
+        <string>#ed3b2f</string>
+        <string>#ed3321</string>
+        <string>#ee4866</string>
+        <string>#ee4863</string>
+        <string>#ef475d</string>
+        <string>#ee3f4d</string>
+        <string>#ed3333</string>
+        <string>#ec2b24</string>
+        <string>#eb261a</string>
+        <string>#de2a18</string>
+        <string>#d42517</string>
+        <string>#ab372f</string>
+        <string>#ac1f18</string>
+        <string>#5d3131</string>
+        <string>#5c2223</string>
+        <string>#5a191b</string>
+        <string>#5a1216</string>
+        <string>#eea2a4</string>
+        <string>#ed556a</string>
+        <string>#f03752</string>
+        <string>#c04851</string>
+        <string>#c02c38</string>
+        <string>#a7535a</string>
+        <string>#7c1823</string>
+        <string>#4c1f24</string>
+        <string>#4d1018</string>
+        <string>#ee2746</string>
+        <string>#de1c31</string>
+        <string>#d11a2d</string>
+        <string>#c45a65</string>
+        <string>#c21f30</string>
+        <string>#a61b29</string>
+        <string>#894e54</string>
+        <string>#82202b</string>
+        <string>#82111f</string>
+        <string>#541e24</string>
+        <string>#500a16</string>
+        <string>#f8ebe6</string>
+        <string>#ec7696</string>
+        <string>#ef3473</string>
+        <string>#ea7293</string>
+        <string>#ec9bad</string>
+        <string>#eb507e</string>
+        <string>#ed2f6a</string>
+        <string>#eeb8c3</string>
+        <string>#ea517f</string>
+        <string>#f1c4cd</string>
+        <string>#ec8aa4</string>
+        <string>#ce5777</string>
+        <string>#ed9db2</string>
+        <string>#ef82a0</string>
+        <string>#eb3c70</string>
+        <string>#ec2c64</string>
+        <string>#e3b4b8</string>
+        <string>#cc163a</string>
+        <string>#c27c88</string>
+        <string>#bf3553</string>
+        <string>#73575c</string>
+        <string>#621624</string>
+        <string>#63071c</string>
+        <string>#36282b</string>
+        <string>#30161c</string>
+        <string>#2b1216</string>
+        <string>#2d0c13</string>
+        <string>#ce5e8a</string>
+        <string>#ec4e8a</string>
+        <string>#ee2c79</string>
+        <string>#951c48</string>
+        <string>#621d34</string>
+        <string>#62102e</string>
+        <string>#382129</string>
+        <string>#381924</string>
+        <string>#33141e</string>
+        <string>#310f1b</string>
+        <string>#eea6b7</string>
+        <string>#ef498b</string>
+        <string>#de7897</string>
+        <string>#de3f7c</string>
+        <string>#d13c74</string>
+        <string>#c5708b</string>
+        <string>#a8456b</string>
+        <string>#4b1e2f</string>
+        <string>#461629</string>
+        <string>#440e25</string>
+        <string>#f0c9cf</string>
+        <string>#eba0b3</string>
+        <string>#ec2d7a</string>
+        <string>#e16c96</string>
+        <string>#ede3e7</string>
+        <string>#e9d7df</string>
+        <string>#d2568c</string>
+        <string>#d2357d</string>
+        <string>#d1c2d3</string>
+        <string>#c8adc4</string>
+        <string>#c08eaf</string>
+        <string>#ba2f7b</string>
+        <string>#8076a3</string>
+        <string>#806d9e</string>
+        <string>#815c94</string>
+        <string>#813c85</string>
+        <string>#7e1671</string>
+        <string>#e9ccd3</string>
+        <string>#d276a3</string>
+        <string>#cc5595</string>
+        <string>#e6d2d5</string>
+        <string>#c35691</string>
+        <string>#c06f98</string>
+        <string>#bdaead</string>
+        <string>#b598a1</string>
+        <string>#9b1e64</string>
+        <string>#856d72</string>
+        <string>#4f383e</string>
+        <string>#482936</string>
+        <string>#f2e7e5</string>
+        <string>#e0c8d1</string>
+        <string>#bc84a8</string>
+        <string>#ad6598</string>
+        <string>#a35c8f</string>
+        <string>#983680</string>
+        <string>#8b2671</string>
+        <string>#894276</string>
+        <string>#7e2065</string>
+        <string>#681752</string>
+        <string>#5d3f51</string>
+        <string>#4e2a40</string>
+        <string>#411c35</string>
+        <string>#36292f</string>
+        <string>#1e131d</string>
+        <string>#1c0d1a</string>
+        <string>#f1f0ed</string>
+        <string>#e2e1e4</string>
+        <string>#ccccd6</string>
+        <string>#a7a8bd</string>
+        <string>#61649f</string>
+        <string>#74759b</string>
+        <string>#cfccc9</string>
+        <string>#525288</string>
+        <string>#2e317c</string>
+        <string>#7a7374</string>
+        <string>#302f4b</string>
+        <string>#3e3841</string>
+        <string>#322f3b</string>
+        <string>#22202e</string>
+        <string>#1f2040</string>
+        <string>#131124</string>
+        <string>#2775b6</string>
+        <string>#2474b5</string>
+        <string>#d0dfe6</string>
+        <string>#93b5cf</string>
+        <string>#619ac3</string>
+        <string>#2376b7</string>
+        <string>#5698c3</string>
+        <string>#2177b8</string>
+        <string>#b0d5df</string>
+        <string>#8abcd1</string>
+        <string>#66a9c9</string>
+        <string>#2983bb</string>
+        <string>#1772b4</string>
+        <string>#63bbd0</string>
+        <string>#5cb3cc</string>
+        <string>#2486b9</string>
+        <string>#1677b3</string>
+        <string>#126bae</string>
+        <string>#22a2c3</string>
+        <string>#1a94bc</string>
+        <string>#158bb8</string>
+        <string>#1177b0</string>
+        <string>#0f59a4</string>
+        <string>#2b73af</string>
+        <string>#cdd1d3</string>
+        <string>#3170a7</string>
+        <string>#5e616d</string>
+        <string>#475164</string>
+        <string>#fffefa</string>
+        <string>#35333c</string>
+        <string>#0f1423</string>
+        <string>#baccd9</string>
+        <string>#8fb2c9</string>
+        <string>#1661ab</string>
+        <string>#c4cbcf</string>
+        <string>#15559a</string>
+        <string>#4e7ca1</string>
+        <string>#346c9c</string>
+        <string>#2f2f35</string>
+        <string>#2d2e36</string>
+        <string>#131824</string>
+        <string>#d8e3e7</string>
+        <string>#c3d7df</string>
+        <string>#2f90b9</string>
+        <string>#1781b5</string>
+        <string>#c7d2d4</string>
+        <string>#11659a</string>
+        <string>#c0c4c3</string>
+        <string>#b2bbbe</string>
+        <string>#5e7987</string>
+        <string>#144a74</string>
+        <string>#74787a</string>
+        <string>#495c69</string>
+        <string>#47484c</string>
+        <string>#2b333e</string>
+        <string>#1c2938</string>
+        <string>#142334</string>
+        <string>#101f30</string>
+        <string>#eef7f2</string>
+        <string>#c6e6e8</string>
+        <string>#93d5dc</string>
+        <string>#51c4d3</string>
+        <string>#29b7cb</string>
+        <string>#0eb0c9</string>
+        <string>#10aec2</string>
+        <string>#57c3c2</string>
+        <string>#b9dec9</string>
+        <string>#83cbac</string>
+        <string>#12aa9c</string>
+        <string>#66c18c</string>
+        <string>#5dbe8a</string>
+        <string>#55bb8a</string>
+        <string>#45b787</string>
+        <string>#2bae85</string>
+        <string>#1ba784</string>
+        <string>#12a182</string>
+        <string>#c4d7d6</string>
+        <string>#1e9eb3</string>
+        <string>#0f95b0</string>
+        <string>#1491a8</string>
+        <string>#7cabb1</string>
+        <string>#a4aca7</string>
+        <string>#869d9d</string>
+        <string>#648e93</string>
+        <string>#3b818c</string>
+        <string>#126e82</string>
+        <string>#737c7b</string>
+        <string>#617172</string>
+        <string>#134857</string>
+        <string>#474b4c</string>
+        <string>#21373d</string>
+        <string>#132c33</string>
+        <string>#a4cab6</string>
+        <string>#2c9678</string>
+        <string>#9abeaf</string>
+        <string>#69a794</string>
+        <string>#92b3a5</string>
+        <string>#248067</string>
+        <string>#428675</string>
+        <string>#9fa39a</string>
+        <string>#8a988e</string>
+        <string>#70887d</string>
+        <string>#497568</string>
+        <string>#5d655f</string>
+        <string>#314a43</string>
+        <string>#223e36</string>
+        <string>#1a3b32</string>
+        <string>#363433</string>
+        <string>#1f2623</string>
+        <string>#141e1b</string>
+        <string>#c6dfc8</string>
+        <string>#9eccab</string>
+        <string>#68b88e</string>
+        <string>#20a162</string>
+        <string>#61ac85</string>
+        <string>#40a070</string>
+        <string>#229453</string>
+        <string>#cad3c3</string>
+        <string>#3c9566</string>
+        <string>#20894d</string>
+        <string>#83a78d</string>
+        <string>#579572</string>
+        <string>#207f4c</string>
+        <string>#6e8b74</string>
+        <string>#1a6840</string>
+        <string>#5e665b</string>
+        <string>#485b4d</string>
+        <string>#393733</string>
+        <string>#373834</string>
+        <string>#2b312c</string>
+        <string>#15231b</string>
+        <string>#f0f5e5</string>
+        <string>#dfecd5</string>
+        <string>#add5a2</string>
+        <string>#41b349</string>
+        <string>#43b244</string>
+        <string>#41ae3c</string>
+        <string>#e2e7bf</string>
+        <string>#d0deaa</string>
+        <string>#b2cf87</string>
+        <string>#8cc269</string>
+        <string>#b7d07a</string>
+        <string>#d2d97a</string>
+        <string>#bacf65</string>
+        <string>#96c24e</string>
+        <string>#e2d849</string>
+        <string>#bec936</string>
+        <string>#5bae23</string>
+        <string>#253d24</string>
+        <string>#fffef8</string>
+        <string>#f8f4ed</string>
+        <string>#fffef9</string>
+        <string>#f7f4ed</string>
+        <string>#e4dfd7</string>
+        <string>#dad4cb</string>
+        <string>#bbb5ac</string>
+        <string>#a49c93</string>
+        <string>#867e76</string>
+        <string>#847c74</string>
+        <string>#80766e</string>
+        <string>#81776e</string>
+      </Colors>
+    </ColorCollection>
+  </ColorCollections>
+</Bookmarks>
