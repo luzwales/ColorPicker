@@ -81,19 +81,10 @@ jobs:
               shell: pwsh
               run: Copy-Item "ColorPicker.Setup/Output/ColorPickerMaxSetup.exe" "ColorPickerMaxSetup.exe"
 
-            # Remove the previous rolling release so the new asset replaces it cleanly.
-            # Fails silently on the very first run when nothing exists yet.
-            - name: Remove previous rolling release
-              continue-on-error: true
-              shell: pwsh
-              env:
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: gh release delete latest --yes --cleanup-tag
-
             - name: Publish release
               uses: softprops/action-gh-release@v2
               with:
-                  tag_name: latest
+                  tag_name: v${{ steps.info.outputs.full }}
                   name: ColorPicker Max v${{ steps.info.outputs.full }}
                   body: |
                       Automated build of branch `main`.
